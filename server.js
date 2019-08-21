@@ -10,17 +10,6 @@ var mysql = require('mysql');
 
 
 const app = express();
-app.use(
-  '/api',
-  proxy({
-    target: process.env.MOCKING_URL,
-    changeOrigin: true,
-    secure: false,
-    ws: true,
-    xfwd: true,
-  })
-);
-
 var host = process.env.HOST || '127.0.0.1';
 const port = process.env.PORT || 5000;    //Run app on whatever port is live have or run my port 5000
 app.use(bodyParser.urlencoded({ extended: true }));
