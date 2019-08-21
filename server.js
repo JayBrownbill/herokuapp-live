@@ -28,9 +28,10 @@ app.use((req, res, next) => {
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
 app.use(express.static('client/build'));
-app.get('*', (req, res) => {
-  res.send(path.join(__dirname, 'client', 'build', 'index.html '));
-});
+
+// app.get('*', (req, res) => {
+//   res.send(path.join(__dirname, 'client', 'build', 'index.html '));
+// });  TURN THIS BACK ON WHEN FINISHED
 
 // app.get('*', (req, res) => {
 //   res.send(path.join(__dirname,'client','build','index.html '));
