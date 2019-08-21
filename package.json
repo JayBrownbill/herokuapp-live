@@ -19,7 +19,8 @@
     "fetch-node": "0.0.1",
     "morgan": "^1.9.1",
     "mysql": "^2.17.1",
-    "tedious": "^6.3.0"
+    "tedious": "^6.3.0",
+    "concurrently": "^4.1.2"
   },
   "devDependencies": {
     "concurrently": "^4.1.2"
