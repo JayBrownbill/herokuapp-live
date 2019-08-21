@@ -67,23 +67,24 @@ export default class VodoIntro extends React.Component {
                 tracker = 'vodo';
                 // console.log('changeBack');
             }
-        }, 9000);
+        }, 4
+        );
     }
 
 
-    GlitchTest() {
-        let token = 'base';
-        setInterval(() => {
-            if (token === 'base') {
-                console.log(token);
-                token = 'secondary';
-                // ?DELAY??
-            } else {
-                console.log(token);
-                token = 'base';
-            }
-        }, 1000);
-    }
+    // GlitchTest() {
+    //     let token = 'base';
+    //     setInterval(() => {
+    //         if (token === 'base') {
+    //             console.log(token);
+    //             token = 'secondary';
+    //             // ?DELAY??
+    //         } else {
+    //             console.log(token);
+    //             token = 'base';
+    //         }
+    //     }, 1000);
+    // }
 
 
     InitializeGlitch() {
@@ -113,7 +114,9 @@ export default class VodoIntro extends React.Component {
             <   PosedLogoDrop
                 pose={this.state.isVibsible ? 'visible' : 'hidden'}
                 id="VodoLogo">
-                <img src={falling} alt="logo" id="glitchSrc" />
+                <img src={falling} 
+                alt="logo" 
+                id="glitchSrc"/>
             </  PosedLogoDrop>
         )
     }

@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(morgan('short'));
 
-if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
+// if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
 
 
 app.use((req, res, next) => {
@@ -27,8 +27,7 @@ app.use((req, res, next) => {
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
-app.use(express.static('client/build'));
-
+// app.use(express.static('client/build'));
 // app.get('*', (req, res) => {
 //   res.send(path.join(__dirname, 'client', 'build', 'index.html '));
 // });  TURN THIS BACK ON WHEN FINISHED
@@ -47,32 +46,32 @@ app.use(express.static('client/build'));
 
 // })
 
-function getConnection() {
-  return mysql.createConnection({
-    host: 'us-cdbr-iron-east-02.cleardb.net',
-    user: 'b4b4afbc10b55e',
-    password: '83cf1c87',
-    port: '3306',
-    database: 'heroku_d4f17cbece4a437',
+// function getConnection() {
+//   return mysql.createConnection({
+//     host: 'us-cdbr-iron-east-02.cleardb.net',
+//     user: 'b4b4afbc10b55e',
+//     password: '83cf1c87',                     // DEBUGGING******** TURN BACK ON
+//     port: '3306',
+//     database: 'heroku_d4f17cbece4a437',
 
-  })
-}
+//   })
+// }
 
-const connection = getConnection();
+// const connection = getConnection();      // DEBUGGING******** TURN BACK ON      
 
-let DBTOKEN = "";
-connection.connect(function (err) {
-  if (!err) {
-    console.log("Successfully Connected.");
-    var succsToken = "Vodo SQL Live";
-    DBTOKEN = succsToken;
+// let DBTOKEN = "";
+// connection.connect(function (err) {
+//   if (!err) {
+//     console.log("Successfully Connected.");
+//     var succsToken = "Vodo SQL Live";
+//     DBTOKEN = succsToken;                        // DEBUGGING******** TURN BACK ON
 
-  } else {
-    console.log("Failed to connect.");
-    var failToken = "SQL Connection failed!!!"
-    DBTOKEN = failToken;
-  }
-});
+//   } else {
+//     console.log("Failed to connect.");
+//     var failToken = "SQL Connection failed!!!"
+//     DBTOKEN = failToken;
+//   }
+// });
 
 
 app.get('/api/responsecheck', (req, res) => {
@@ -80,21 +79,12 @@ app.get('/api/responsecheck', (req, res) => {
 });
 
 app.get('/api/databasecheck', (req, res) => {
-  res.send({ express: DBTOKEN });
+  res.send({ express: DBTOKEN });    // dEBUGGED THIS WORKS******** TURN BACK ON      
+  res.send({ express: 'CURRENTLY OFF FOR DEBUGGING ***  API FOR DB CHECK IS LIVE THOUGH' });
 });
-
-app.get('/api/register', (req, res) => {
-
-  res.json([user1, user2]);
-
-});
-
-
 
 app.post('/api/add', (req, res) => {
   console.log('attempting to create a new user....');
-
-  // let bodytest = JSON.parse(JSON.stringify(req.body));
 
   console.log(req.body.usrname);
   console.log(req.body.email);
@@ -105,7 +95,7 @@ app.post('/api/add', (req, res) => {
       console.log('Error inserting new user...' + err);
       res.sendStatus(500);
       return;
-    } else {
+    } else {                        // DEBUGged ** TICK
       console.log('New user has successfully been inserted to DB: ', results.insertedId);
       res.end();
     }
@@ -126,21 +116,5 @@ app.get("/api/db", (req, res) => {
     }
   });
 })
-
-
-
-app.post('/api/world', (req, res) => {
-  console.log(req.body);
-  res.send(
-    `I received your POST request. This is what you sent me: ${req.body.post}`,
-  );
-});
-
-
-// https.createServer({}, app).listen({port}, () => {
-//   console.log(`Listening on port ${port}`);
-// })
-
-
 
 process.on('SIGINT', () => { console.log("Bye bye!"); process.exit(); });
