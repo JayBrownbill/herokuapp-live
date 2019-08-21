@@ -7,6 +7,7 @@ var https = require('https');
 var fs = require('fs');
 var utils = require('util');
 var mysql = require('mysql');
+require("dotenv").config;
 
 
 const app = express();
@@ -25,14 +26,11 @@ app.use((req, res, next) => {
   next();
 });
 
+
+app.use(express.static('client/build')); //Middleware
+
+
 app.listen(port, () => console.log(`Listening on port ${port}`));
-// app.use(express.static('client/build'));
-
-
-app.get('*', (req, res) => {
-  res.send(path.join(__dirname, 'client', 'build', 'index.html '));
-  });  
-
 
 
   // var connection = mysql.createConnection({
@@ -114,5 +112,12 @@ app.get('*', (req, res) => {
       }
     });
   });
-  
+
+  // Catch all code which routes users back to homepage
+  app.get('*', (req, res) => {
+    res.send(path.join(__dirname, 'client', 'build', 'index.html '));
+    });  
+
+
+
   process.on('SIGINT', () => { console.log("Bye bye!"); process.exit(); });
