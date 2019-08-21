@@ -1,0 +1,8 @@
+{
+    "git.ignoreLimitWarning": true,
+    "appService.zipIgnorePattern": [
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/3d631d61-44d6-4ba7-a275-609c343945eb/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/vodo-live-v1",
+    "appService.deploySubpath": ""
+}
