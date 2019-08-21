@@ -12,19 +12,20 @@ var mysql = require('mysql');
 const app = express();
 var host = process.env.HOST || '127.0.0.1';
 const port = process.env.PORT || 5000;    //Run app on whatever port is live have or run my port 5000
-
-
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 // app.use(bodyParser.json({ type: 'application/json' }))
 app.use(morgan('short'));
-
 
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "*");
   next();
 });
+
+app.listen( app.get( port ), function() {
+  console.log( 'Node server is running on port ' + app.get( port ));
+  });
 
 
 if(process.env.NODE_ENV === 'production'){
@@ -48,11 +49,11 @@ if(process.env.NODE_ENV === 'production'){
 
 function getConnection() {
   return mysql.createConnection({
-    host: 'eu-cdbr-west-02.cleardb.net',
-    user: 'bb8dc375142522',
-    password: 'bce7f4ff',
+    host: 'us-cdbr-iron-east-02.cleardb.net',
+    user: 'b4b4afbc10b55e',
+    password: '83cf1c87',
     port: '3306',
-    database: 'heroku_c41b8d908c2461c',
+    database: 'heroku_d4f17cbece4a437',
 
   })
 }
@@ -154,8 +155,6 @@ app.post('/api/world', (req, res) => {
 // })
 
 
-
-
-app.listen(port, () => console.log(`Listening on port ${port}`));
+// app.listen(port, () => console.log(`Listening on port ${port}`));
 
 process.on('SIGINT', () => { console.log("Bye bye!"); process.exit(); });
