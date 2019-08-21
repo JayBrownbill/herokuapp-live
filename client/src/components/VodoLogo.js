@@ -67,7 +67,7 @@ export default class VodoIntro extends React.Component {
                 tracker = 'vodo';
                 // console.log('changeBack');
             }
-        }, 4);
+        }, 9000);
     }
 
 
