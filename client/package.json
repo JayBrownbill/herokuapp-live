@@ -1,9 +1,9 @@
 {
   "start": "NODE_PATH=./src react-scripts start",
   "name": "react-app",
-  "version": "0.1.0",
+  "version": "0.1.0", 
   "private": true,
-  "proxy": "84.13.63.222",
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@tanem/svg-injector": "^8.0.20",
     "animate.css": "^3.7.2",
