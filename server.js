@@ -32,9 +32,9 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 //   res.send(path.join(__dirname, 'client', 'build', 'index.html '));
 // });  TURN THIS BACK ON WHEN FINISHED
 
-// app.get('*', (req, res) => {
-//   res.send(path.join(__dirname,'client','build','index.html '));
-// });
+app.get('*', (req, res) => {
+  res.send(path.join(__dirname,'client','build','index.html '));
+});
 
 
 // var connection = mysql.createConnection({
