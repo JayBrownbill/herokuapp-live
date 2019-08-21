@@ -23,19 +23,17 @@ app.use((req, res, next) => {
   next();
 });
 
-app.listen( app.get( port ), function() {
-  console.log( 'Node server is running on port ' + app.get( port ));
-  });
+app.listen(port, () => console.log(`Listening on port ${port}`));
 
 
-if(process.env.NODE_ENV === 'production'){
   app.use(express.static('client/build'));
-
   app.get('*', (req, res) => {
     res.send(path.join(__dirname,'client','build','index.html '));
   });
-}
 
+// app.get('*', (req, res) => {
+//   res.send(path.join(__dirname,'client','build','index.html '));
+// });
 
 
 // var connection = mysql.createConnection({
@@ -73,19 +71,6 @@ connection.connect(function (err) {
     DBTOKEN = failToken;
   }
 });
-
-// function handle_db(req,res){
-//     connection.query('SELECT * FROM heroku_c41b8d908c2461c', function(err, rows){
-
-//       if (err) {
-//         return res.json({'error': true, 'message' : 'Error occured' + err});
-
-//       }else{
-//         res.send(rows);
-//       }
-//     });
-// }
-
 
 
 app.get('/api/responsecheck', (req, res) => {
@@ -155,6 +140,5 @@ app.post('/api/world', (req, res) => {
 // })
 
 
-// app.listen(port, () => console.log(`Listening on port ${port}`));
 
 process.on('SIGINT', () => { console.log("Bye bye!"); process.exit(); });
