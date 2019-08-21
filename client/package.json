@@ -3,7 +3,7 @@
   "name": "react-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://vodoorealm.herokuapp.com",
+  "proxy": "84.13.63.222",
   "dependencies": {
     "@tanem/svg-injector": "^8.0.20",
     "animate.css": "^3.7.2",
