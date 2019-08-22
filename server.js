@@ -51,6 +51,7 @@ var pool = mysql.createPool({
 // });
 
 
+
 app.get('/api/responsecheck', (req, res) => {
   res.send({ express: 'SERVER IS ACTIVE!' });
 });
@@ -82,11 +83,14 @@ app.get("/api/databasecheck", (req, res) => {
     if (!!err) {
       res.sendStatus(500);
       console.log("Could not retrieve database results");
+      connection.release();
     } else {
       connection.query(query_ReadAll, function (err, result) {
         console.log('Connnection successfull...');
         console.log('Query accepted...');
         res.send(result);
+        
+        connection.release();
         console.log('Conn Pool released for re-use!!!');
       });
     }
