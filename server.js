@@ -32,8 +32,7 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 
 
 
-var pool = mysql.createPool({
-  connectionLimit: 100,
+var connection = mysql.createConnection({
   host: 'us-cdbr-iron-east-02.cleardb.net',
   user: 'b4b4afbc10b55e',
   password: '83cf1c87',                 //Currently testing may be fix to heroku error****
@@ -43,8 +42,7 @@ var pool = mysql.createPool({
 
 
 
-pool.getConnection('error', function (err) {      
-  pool.releaseConnection();           
+connection.on('error', function (err) {                 
    console.log('caught this error: ' + err.toString());
 });
 
@@ -59,16 +57,15 @@ app.post('/api/add', (req, res) => {
   console.log(req.body.usrname);
   console.log(req.body.email);
 
+
   const Query_Insert = "INSERT INTO register_usr (name, email) VALUES(?, ?)"
-  pool.getConnection().query(Query_Insert, [req.body.usrname, req.body.email], (err, results, fields) => {
+  connection.query(Query_Insert, [req.body.usrname, req.body.email], (err, results, fields) => {
     if (err) {
       console.log('Error inserting new user...' + err);
-      pool.releaseConnection();
       res.sendStatus(500);
       return;
     } else {                       
       console.log('New user has successfully been inserted to DB: ', results.insertedId);
-      pool.releaseConnection();
       res.end();
     }
   });
@@ -77,16 +74,14 @@ app.post('/api/add', (req, res) => {
 
 app.get("/api/databasecheck", (req, res) => {
   const query_ReadAll = "SELECT * FROM register_usr"
-  pool.getConnection().query(query_ReadAll, function (err, rows, fields) {
+  connection.query(query_ReadAll, function (err, rows, fields) {
     if (!!err) {
       res.sendStatus(500);
       console.log("Could not recieve database results...");
-      pool.releaseConnection();
 
     } else {
       res.json(rows);
-      console.log("Query Successful... New user registered.");
-      pool.releaseConnection();
+      console.log("Query Successful... All users showing (refer to browser)");
     }
   });
 });
