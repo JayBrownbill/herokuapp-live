@@ -31,7 +31,9 @@ app.use(express.static('client/build')); //Middleware
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
 
-var connection = mysql.createConnection({
+
+var pool = mysql.createPool({
+  connectionLimit: 100,
   host: 'us-cdbr-iron-east-02.cleardb.net',
   user: 'b4b4afbc10b55e',
   password: '83cf1c87',                 //Currently testing may be fix to heroku error****
@@ -39,7 +41,10 @@ var connection = mysql.createConnection({
   database: 'heroku_d4f17cbece4a437',
 })
 
-connection.on('error', function (err) {                 
+
+
+pool.getConnection('error', function (err) {      
+  pool.releaseConnection();           
    console.log('caught this error: ' + err.toString());
 });
 
@@ -55,13 +60,15 @@ app.post('/api/add', (req, res) => {
   console.log(req.body.email);
 
   const Query_Insert = "INSERT INTO register_usr (name, email) VALUES(?, ?)"
-  connection.query(Query_Insert, [req.body.usrname, req.body.email], (err, results, fields) => {
+  pool.getConnection().query(Query_Insert, [req.body.usrname, req.body.email], (err, results, fields) => {
     if (err) {
       console.log('Error inserting new user...' + err);
+      pool.releaseConnection();
       res.sendStatus(500);
       return;
     } else {                       
       console.log('New user has successfully been inserted to DB: ', results.insertedId);
+      pool.releaseConnection();
       res.end();
     }
   });
@@ -74,10 +81,12 @@ app.get("/api/databasecheck", (req, res) => {
     if (!!err) {
       res.sendStatus(500);
       console.log("Could not recieve database results...");
+      pool.releaseConnection();
 
     } else {
       res.json(rows);
       console.log("Query Successful... New user registered.");
+      pool.releaseConnection();
     }
   });
 });
