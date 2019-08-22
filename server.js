@@ -76,7 +76,6 @@ app.post('/api/add', (req, res) => {
   });
 });
 
-
 app.get("/api/databasecheck", (req, res) => {
   const query_ReadAll = "SELECT * FROM register_usr"
   pool.getConnection(function (err, connection) {
@@ -89,7 +88,6 @@ app.get("/api/databasecheck", (req, res) => {
         console.log('Connnection successfull...');
         console.log('Query accepted...');
         res.send(result);
-        
         connection.release();
         console.log('Conn Pool released for re-use!!!');
       });
