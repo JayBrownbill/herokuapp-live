@@ -39,7 +39,7 @@ var connection = mysql.createConnection({
   database: 'heroku_d4f17cbece4a437',
 })
 
-connection.on('error', function (err) {                 // DEBUGGING*****REFACTORING *** PROBLEM
+connection.on('error', function (err) {                 
    console.log('caught this error: ' + err.toString());
 });
 
@@ -60,7 +60,7 @@ app.post('/api/add', (req, res) => {
       console.log('Error inserting new user...' + err);
       res.sendStatus(500);
       return;
-    } else {                        // DEBUGged ** TICK
+    } else {                       
       console.log('New user has successfully been inserted to DB: ', results.insertedId);
       res.end();
     }
@@ -73,11 +73,11 @@ app.get("/api/databasecheck", (req, res) => {
   connection.query(query_ReadAll, function (err, rows, fields) {
     if (!!err) {
       res.sendStatus(500);
-      console.log("error in query");
+      console.log("Could not recieve database results...");
 
     } else {
       res.json(rows);
-      console.log("successful query... refer back to browser");
+      console.log("Query Successful... New user registered.");
     }
   });
 });

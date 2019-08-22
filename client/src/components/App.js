@@ -16,54 +16,10 @@ import KickstartIntro from './KickstartSmall';
 
 
 export default class App extends React.Component {
-
-  state = {
-    renderedResponse: " ",
-    databaseConnection: " ",
-  }
-
-  getResponse = async () => {
-    const response = await fetch('/api/responsecheck');
-    const body = await response.json();
-    if (response.status !== 200) throw Error(body.message);
-    return body;
-  }
-
-  getDBResponse = async () =>{
-    const dbToken = await fetch('/api/databasecheck');
-    const body2 = await dbToken.json();
-    if (dbToken.status !== 200) throw Error(body2.message);
-    return body2;
-  }
-
-  componentDidMount() {
-    this.getResponse()
-      .then(res => {
-        const someData = res;
-        this.setState({ renderedResponse: someData })
-      });
-
-      this.getDBResponse()
-      .then(res=>{
-        const dbData = res;
-        this.setState({databaseConnection: dbData});
-      })
-  }
-
+  
   render() {
-    const {renderedResponse} = this.state;
-    const {databaseConnection} = this.state;
-
     return (
       <div id="application">
-
-      <p> --------------------------Calling Server (BACKEND) </p>
-      <p> -------------------------- {renderedResponse.express} </p>
-
-      <p> --------------------------Connecting to Heroku Sql Database (BACKEND) </p>
-      <p> -------------------------- {databaseConnection.express} </p>
-
-
 
         <Navbar />
 

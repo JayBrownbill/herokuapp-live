@@ -26,13 +26,6 @@ export default class Register extends React.Component {
         this.setState({ email: event.target.value });
     }
 
-    // AXIOS POST METHOD 
-
-    // axios.post('/api/register/', this.state).then(function(res){
-    //     console.log(res);
-    //     console.log(res.data);
-    // });
-
     sumbitHandler = event => {
 
         event.preventDefault();
@@ -45,10 +38,6 @@ export default class Register extends React.Component {
             email
         });
 
-        // let usrname = this.state.usrname;
-        // let email = this.state.email;
-
-
         axios.post(`https://vodoorealm.herokuapp.com/api/add`, data,{
             headers : {
                 'Content-Type': 'application/json',
@@ -59,11 +48,7 @@ export default class Register extends React.Component {
             console.log(res.data);
             console.log(usrname + " "  + email);
         })
-
     }
-
-
-    // --------------------------------------
 
 
     render() {
@@ -99,48 +84,3 @@ export default class Register extends React.Component {
         )
     }
 };
-
-
-
-
-
-        // const fname = this.state.usrname;
-        // const eml = this.state.email;
-
-        // axios({
-        //     method: "post",
-        //     headers: 'Access-Control-Allow-Origin',                  ***** OLD BUT WORKING AXIOS METHOD POST *******
-        //     mode: 'cors',
-        //     url: "http://localhost:5000/api/add",
-        //     data: {fname, eml},
-        //     // config: { headers: { 'Content-Type': 'multipart/form-data' } }
-
-        // }).then(function (response) {
-        //     //handle success
-        //     console.log(response);
-        // })
-        //     .catch(function (response) {
-        //         //handle error
-        //         console.log(response);
-        //     })
-        // event.preventDefault();
-        // console.log(fname, eml);
-
-
-
-
-     // <div id="signUp">       OLD SIGNUP FORM ------***
-            //     <h1> <span> Sign up to get a message from Capt.Stranges pager </span> </h1>
-            //     <form onSubmit={this.sumbitHandler}>
-            //         <label className="formLbl">
-            //             EMAIL <br/> 
-            //         <input type="text"
-            //                 value={this.state.email}
-            //                 placeholder="Connect to the Vodo Realm"
-            //                 onChange={this.changeEmailHandler} />
-            //         </label>
-            //         <input type="submit" 
-            //             value="Submit" 
-            //             className="BtnLarge"/>
-            //     </form>
-            // </div>
