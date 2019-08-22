@@ -90,6 +90,7 @@ app.get("/api/databasecheck", (req, res) => {
         res.send(result);
          connection.release();
         console.log('Conn Pool released for re-use!!!');
+        
       });
     }
   });
