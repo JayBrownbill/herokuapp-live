@@ -23,28 +23,32 @@ app.use((req, res, next) => {
   res.header("Access-Control-Allow-Headers", "*");
   next();
 });
-
-
 app.use(express.static('client/build')); //Middleware
-
-
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
 
 
-var connection = mysql.createConnection({
+// var connection = mysql.createConnection({
+//   host: 'us-cdbr-iron-east-02.cleardb.net',
+//   user: 'b4b4afbc10b55e',
+//   password: '83cf1c87',                             //TURN OFF WHILST POOL TESTING****
+//   port: '3306',
+//   database: 'heroku_d4f17cbece4a437',
+// });
+
+var pool = mysql.createPool({
+  connectionLimit: 10,
   host: 'us-cdbr-iron-east-02.cleardb.net',
   user: 'b4b4afbc10b55e',
   password: '83cf1c87',                 //Currently testing may be fix to heroku error****
   port: '3306',
   database: 'heroku_d4f17cbece4a437',
-})
-
-
-
-connection.on('error', function (err) {                 
-   console.log('caught this error: ' + err.toString());
 });
+
+
+// connection.on('error', function (err) {                 
+//    console.log('caught this error: ' + err.toString());
+// });
 
 
 app.get('/api/responsecheck', (req, res) => {
@@ -64,7 +68,7 @@ app.post('/api/add', (req, res) => {
       console.log('Error inserting new user...' + err);
       res.sendStatus(500);
       return;
-    } else {                       
+    } else {
       console.log('New user has successfully been inserted to DB: ', results.insertedId);
       res.end();
     }
@@ -74,16 +78,30 @@ app.post('/api/add', (req, res) => {
 
 app.get("/api/databasecheck", (req, res) => {
   const query_ReadAll = "SELECT * FROM register_usr"
-  connection.query(query_ReadAll, function (err, rows, fields) {
+  pool.getConnection(function (err, connection) {
     if (!!err) {
       res.sendStatus(500);
-      console.log("Could not recieve database results...");
-
+      console.log("Could not retrieve database results");
     } else {
-      res.json(rows);
-      console.log("Query Successful... All users showing (refer to browser)");
+      connection.query(query_ReadAll, function (err, result) {
+        console.log('Connnection successfull...');
+        console.log('Query accepted...');
+        res.send(result);
+        connection.release();
+        console.log('Conn Pool released for re-use!!!');
+      });
     }
   });
+  //   connection.query(query_ReadAll, function (err, rows, fields) {
+  //     if (!!err) {
+  //       res.sendStatus(500);
+  //       console.log("Could not recieve database results...");            //TURN OFF WHILST POOL TESTING****
+
+  //     } else {
+  //       res.json(rows);
+  //       console.log("Query Successful... All users showing (refer to browser)");
+  //     }
+  //   });
 });
 
 // Catch all code which routes users back to homepage
@@ -94,17 +112,3 @@ app.get('*', (req, res) => {
 
 
 process.on('SIGINT', () => { console.log("Bye bye!"); process.exit(); });
-
-
-// function getConnection() {
-//   return mysql.createConnection({
-//     host: 'us-cdbr-iron-east-02.cleardb.net',
-//     user: 'b4b4afbc10b55e',
-//     password: '83cf1c87',                     // DEBUGGING******** TURN BACK ON
-//     port: '3306',
-//     database: 'heroku_d4f17cbece4a437',
-
-//   })
-// }
-
-// const connection = getConnection();      // DEBUGGING******** TURN BACK ON      
