@@ -37,7 +37,7 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 // });
 
 var pool = mysql.createPool({
-  connectionLimit: 10,
+  connectionLimit: 100,
   host: 'us-cdbr-iron-east-02.cleardb.net',
   user: 'b4b4afbc10b55e',
   password: '83cf1c87',                 //Currently testing may be fix to heroku error****
@@ -87,7 +87,6 @@ app.get("/api/databasecheck", (req, res) => {
         console.log('Connnection successfull...');
         console.log('Query accepted...');
         res.send(result);
-        connection.release();
         console.log('Conn Pool released for re-use!!!');
       });
     }
