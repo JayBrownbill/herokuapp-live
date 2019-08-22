@@ -8,7 +8,7 @@ export default class SecComponentThree extends React.Component{
     render() {
         return (
 
-             <div>
+             <div className = "text-slide">
                     <SecTitle Title="3. How It's Made " />
                     <VodoSecText content={howsmade} />
                 </div>

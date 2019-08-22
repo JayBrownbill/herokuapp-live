@@ -18,7 +18,7 @@ export default class VodoSec extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id = "vodoSecText">
                 <div>
                     <ScrollAnimation animateIn="bounceInRight" duration={4} animateOut="bounceOutRight">
                         <SecComponentOne />

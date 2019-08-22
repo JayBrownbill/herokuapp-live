@@ -9,8 +9,8 @@ export default class ProductComponents extends React.Component {
         return (
             <div id="product-Wrapper">
             <div id="productInfo">
-              <h1> PRODUCT </h1>
-              <p> These are some of the products stolen from the voodoo realm. 
+              <h1 id = "productHead"> PRODUCT </h1>
+              <p id = "product-main-conent"> These are some of the products stolen from the voodoo realm. 
               Captain strange has got his hands on the dreamers elixir. 
               He will be making his way back to the realm to steal the other products for you! 
               Get his memo details.  </p>

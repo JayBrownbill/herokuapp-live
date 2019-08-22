@@ -13,7 +13,6 @@ body {
 p{
     margin: 0;
     font-family: 'kg-solid';
-
 }
 a{
     text-decoration: none;
@@ -76,6 +75,7 @@ z-index: -9999;
 input:focus{
 background-color: #fff;
 }
+
 
 .BtnLarge{
     color: white;
@@ -167,11 +167,106 @@ background-color: #fff;
 } */
 /* ------------------------------- */
 
+@media only screen and (max-width: 640px) {
+    /* For mobile phones: */
+html{
+    width: 206%;
+}
+
+body #productHead{
+    font-size:3em;
+}
+
+body ul.TabList{
+margin-left: 14em ;
+float: none;
+}
+
+body li#react-tabs-2{
+    margin-left: 2em;
+}
+
+html #truth-text-Wrapper{
+    width: 90vw;
+    font-size: 1.2em;
+}
+
+html #lies-text-Wrapper{
+    margin-top: -4em;
+    width: 90vw;
+    font-size: 1.1em;
+
+}
+
+html #meditate-focal{
+    margin-left: 2em;
+}
+
+body #spinners{
+    margin-left: -2em;
+    margin-top: 1.7em;
+}
+
+html #product-Wrapper{
+    flex-direction: column;
+}
+
+html #togglebtn{
+    height: 150%;
+    padding-bottom: 5em;
+}
+
+body #productInfo{
+    width: 185%;
+}
+
+body #productCards{
+    width: 200%;
+}
+
+body #pager{
+    font-size: 1.5em;
+    margin-left: -3.3em;
+    margin-top: 2.5em;
+}
+
+body #vodo-sec{
+    width: 90%;
+}
+
+body #product-main-conent{
+    font-size: 2em;
+}
+
+body .creamBase{
+    height: 115%;
+}
+
+body #vodoSecText{
+    margin-left: -2em;
+    padding: 1.5em;
+}
+
+/* 
+h1 span{
+    font-size: 0.82em;
+}
+
+
+#landing-wrap{
+    width: 145%;
+    margin-left: -3em;
+
+} */
+
+
+  }
 
 
  /* N A V I G A T I O N   S Y S T E M  */
 
 .navbar {
+    position: absolute;
     text-decoration: none;
     display: inline-block;
     margin-top: 3em;
@@ -182,8 +277,8 @@ background-color: #fff;
 
 .bm-burger-button{
     position: fixed;
-    width: 30px;
-    height: 30px;
+    width: 4em;
+    height: 4em;
     left: 1em;
     top: 1em;
 }
@@ -203,7 +298,8 @@ background-color: #fff;
     background-color: #694873;
     overflow-y: none !important;
     align-items: center;
-    padding-top: 3em;
+    padding-top: 10em;
+    font-size: 2em;
     /* font-family: 'kg-solid'; */
 }
 
@@ -273,31 +369,7 @@ color: white;
     font-size: 2em;
     /* margin-left: 3em; */
     color: white;
-
 }
-
-glitchSrc{
- 
-
-}
-#welcome{
-
-    font-family: 'kg-solid';
-
-}
-
-    @keyframes dash{
-    0% {
-
-        /* opacity: 0; */
-        stroke-dashoffset: 1500;
-
-        }
-
-    100%{
-        stroke-dashoffset: 0;
-        }
-    }
 
     .creamBase{
         background-color:#fff8eb;

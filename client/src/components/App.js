@@ -3,6 +3,8 @@ import React from 'react';
 import '../stylesheets/App.css';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import MediaQuery from 'react-responsive';
+
 
 import WelcomeComponents from './WelcomeComponents'
 import Navbar from './Navbar';
@@ -12,19 +14,21 @@ import ProductComponents from './ProductComponents.js';
 import Register from './Register';
 import VodoSec from './VodoSec';
 import KickstartIntro from './KickstartSmall';
-// import WebGLContainer from './GLCONTAINER';  MIST DISCONTINUED
+
 
 
 export default class App extends React.Component {
-  
+
   render() {
     return (
       <div id="application">
 
-        <Navbar />
+      <MediaQuery maxDeviceWidth={1000}>
+          <Navbar />
+          </MediaQuery>
 
         <div id="landing-wrap" >
-            <WelcomeComponents />
+          <WelcomeComponents />
         </div>
 
         <div id="togglebtn">

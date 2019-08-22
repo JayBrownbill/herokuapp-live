@@ -47,7 +47,7 @@ export default class FloatingObjects extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id = "spinners">
                 <div id="spinball">
                     <FloatingIcon ImgURL={ball} />
                 </div>

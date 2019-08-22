@@ -7,7 +7,7 @@ const greentea = "Green tea is commonly known as a superfood. Which is why the V
 export default class SecComponentTwo extends React.Component {
     render() {
         return (
-            <div>
+            <div className = "text-slide">
             <SecTitle Title="2. Green Tea" />
             <VodoSecText content={greentea} />
             </div>
