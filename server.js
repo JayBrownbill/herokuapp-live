@@ -46,11 +46,6 @@ var pool = mysql.createPool({
 });
 
 
-// connection.on('error', function (err) {                 
-//    console.log('caught this error: ' + err.toString());
-// });
-
-
 
 app.get('/api/responsecheck', (req, res) => {
   res.send({ express: 'SERVER IS ACTIVE!' });
@@ -63,15 +58,27 @@ app.post('/api/add', (req, res) => {
   console.log(req.body.email);
 
 
-  const Query_Insert = "INSERT INTO register_usr (name, email) VALUES(?, ?)"
-  connection.query(Query_Insert, [req.body.usrname, req.body.email], (err, results, fields) => {
-    if (err) {
-      console.log('Error inserting new user...' + err);
+  const query_Insert = "INSERT INTO register_usr (name, email) VALUES(?, ?)"
+
+  pool.getConnection(function (err, connection) {
+    if (!!err) {
       res.sendStatus(500);
-      return;
+      console.log('Error inserting new user...' + err);
+      connection.release();
     } else {
-      console.log('New user has successfully been inserted to DB: ', results.insertedId);
-      res.end();
+      connection.query(query_Insert, [req.body.usrname, req.body.email], function (err, result) {
+        if (!!err) {
+          console.log('Error inserting new user...' + err);
+          res.sendStatus(500);
+          connection.release();
+          console.log('Conn Pool released for re-use!!!');
+
+        } else {
+          console.log('New user has successfully been inserted to DB: ', result.insertedId);
+          connection.release();
+          console.log('Conn Pool released for re-use!!!');
+        }
+      });
     }
   });
 });
@@ -88,22 +95,12 @@ app.get("/api/databasecheck", (req, res) => {
         console.log('Connnection successfull...');
         console.log('Query accepted...');
         res.send(result);
-         connection.release();
+        connection.release();
         console.log('Conn Pool released for re-use!!!');
-        
+
       });
     }
   });
-  //   connection.query(query_ReadAll, function (err, rows, fields) {
-  //     if (!!err) {
-  //       res.sendStatus(500);
-  //       console.log("Could not recieve database results...");            //TURN OFF WHILST POOL TESTING****
-
-  //     } else {
-  //       res.json(rows);
-  //       console.log("Query Successful... All users showing (refer to browser)");
-  //     }
-  //   });
 });
 
 // Catch all code which routes users back to homepage
@@ -114,3 +111,34 @@ app.get('*', (req, res) => {
 
 
 process.on('SIGINT', () => { console.log("Bye bye!"); process.exit(); });
+
+
+
+// connection.on('error', function (err) {                 
+//    console.log('caught this error: ' + err.toString());
+// });
+
+
+  //   connection.query(query_ReadAll, function (err, rows, fields) {
+  //     if (!!err) {
+  //       res.sendStatus(500);
+  //       console.log("Could not recieve database results...");            //OLD DB SYSTEM
+
+  //     } else {
+  //       res.json(rows);
+  //       console.log("Query Successful... All users showing (refer to browser)");
+  //     }
+  //   });
+
+
+
+    // connection.query(query_Insert, [req.body.usrname, req.body.email], (err, results, fields) => {
+  //   if (err) {
+  //     console.log('Error inserting new user...' + err);
+  //     res.sendStatus(500);
+  //     return;
+  //   } else {
+  //     console.log('New user has successfully been inserted to DB: ', results.insertedId);
+  //     res.end();
+  //   }
+  // });
