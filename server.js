@@ -77,7 +77,7 @@ app.post('/api/add', (req, res) => {
 
 app.get("/api/databasecheck", (req, res) => {
   const query_ReadAll = "SELECT * FROM register_usr"
-  connection.query(query_ReadAll, function (err, rows, fields) {
+  pool.getConnection().query(query_ReadAll, function (err, rows, fields) {
     if (!!err) {
       res.sendStatus(500);
       console.log("Could not recieve database results...");
