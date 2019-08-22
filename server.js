@@ -88,7 +88,7 @@ app.get("/api/databasecheck", (req, res) => {
         console.log('Connnection successfull...');
         console.log('Query accepted...');
         res.send(result);
-        connection.release();
+         connection.release();
         console.log('Conn Pool released for re-use!!!');
       });
     }
