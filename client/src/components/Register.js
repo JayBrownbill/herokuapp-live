@@ -49,7 +49,7 @@ export default class Register extends React.Component {
         // let email = this.state.email;
 
 
-        axios.post(`http://localhost:5000/api/add`, data,{
+        axios.post(`https://vodoorealm.herokuapp.com/api/add`, data,{
             headers : {
                 'Content-Type': 'application/json',
             }
