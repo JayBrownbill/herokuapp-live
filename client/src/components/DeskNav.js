@@ -9,7 +9,7 @@ export default class DeskNav extends React.Component {
             <div> 
                 <ul id = "desk-navbar">
                 <li><AnchorLink offset='200' href='#landing-wrap'> HOME </AnchorLink></li>
-                <li><AnchorLink offset='110' href='#bottleUp'> PRODUCT </AnchorLink></li>
+                <li><AnchorLink offset='55' href='#product-Wrapper'> PRODUCT </AnchorLink></li>
                 <li><AnchorLink offset='55' href='#finalStarter'> KICKSTART </AnchorLink></li>
 
                 </ul>
