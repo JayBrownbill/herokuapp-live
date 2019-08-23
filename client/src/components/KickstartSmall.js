@@ -15,6 +15,8 @@ export default class KickstartIntro extends React.Component {
 
           <Reviews/>
 
+          <h1><span> SOLD OUT IN TWO WEEKS  </span></h1>
+
 
             </div>
             

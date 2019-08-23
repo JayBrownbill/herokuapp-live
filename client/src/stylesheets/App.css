@@ -122,27 +122,32 @@ opacity: 0.95;
 @font-face{
     font-family: 'kghappy';
     src: local('KGHAPPY'), url(./../fonts/KGHAPPY.ttf) format('ttf');
+
 }
 
 @font-face{
     font-family: 'kg-solid';
     src: local('KGHAPPYSolid'), url(./../fonts/KGHAPPYSolid.ttf) format('ttf');
+
 }
 
 @font-face{
     font-family: 'kg-shadow';
     src: local('KGHAPPYShadows'), url(./../fonts/KGHAPPYShadows.ttf) format('ttf');
+
 }
 
 @font-face{
     font-family: 'exo-black';
     src: local('Exo-Black'), url(./../fonts/Exo-Medium.ttf) format('ttf');
 
+
 }
 
 @font-face{
     font-family: 'qirkus';
     src: local('Qirkus-CAPS'), url(./../fonts/Qirkus-CAPS.ttf) format('ttf');
+
 }
 
 /* --------------- */
