@@ -8,6 +8,7 @@ import MediaQuery from 'react-responsive';
 
 import WelcomeComponents from './WelcomeComponents'
 import Navbar from './Navbar';
+import DeskNav from './DeskNav'
 import Toggle from './Toggle';
 import About from './About';
 import ProductComponents from './ProductComponents.js';
@@ -29,6 +30,10 @@ export default class App extends React.Component {
           <Navbar />
           </MediaQuery>
 
+        <MediaQuery minDeviceWidth={1001}>
+          <DeskNav/>
+          </MediaQuery>
+        
         <div id="landing-wrap" >
           <WelcomeComponents />
         </div>
@@ -48,9 +53,12 @@ export default class App extends React.Component {
           <VodoSec />
         </div>
 
-        <div>
+        <div id="finalStarter">
           <KickstartIntro />
         </div>
+
+
+
 
       </div>
     );
