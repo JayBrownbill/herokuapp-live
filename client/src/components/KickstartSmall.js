@@ -10,7 +10,7 @@ export default class KickstartIntro extends React.Component {
                     We haven't been able to deal with the demand and we are still struggling. 
                     This is why we have decided to Kickstart our business.<br/><br/>
                     We are looking to raise £20k to manufacture more drinks. <b> That is it.</b> All we want to do is supply you with all the <b> VODO </b> you want!
-                    <br/> <h1>Scroll to find out more details </h1></p>
+                    <br/> Scroll to find out more details </p>
 
 
           <Reviews/>

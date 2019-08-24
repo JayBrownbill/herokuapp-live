@@ -55,7 +55,7 @@ export default class Register extends React.Component {
         return (
             <div id="register-wrapper" >
                 <div>
-                    <img src={pager} alt="Captains Pager" />
+                    <img src={pager} alt="Captains Pager" id="vodo-page" />
                     <form onSubmit={this.sumbitHandler}>
 
                         <input type="text"

@@ -46,7 +46,7 @@ export default class WelcomeText extends React.Component {
             <   PosedTextDrop
                 pose={this.state.isVibsible ? 'visible' : 'hidden'}
                 id="VodoTitle">
-                <h1>  WELCOME TO  </h1>
+                <h1 id="vodo-head">  WELCOME TO  </h1>
             </  PosedTextDrop>
         )
     }
