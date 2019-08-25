@@ -4,7 +4,11 @@ import posed from 'react-pose';
 import AnchcorLink from 'react-anchor-link-smooth-scroll';
 
 import arrow from '../assets/arrowDown.png';
-import phone from '../assets/phoneRsz.png'
+import phone from '../assets/phoneRsz.png';
+import percent from '../assets/100percRSZ.png';
+import bottle from '../assets/choppedBottle.png'
+import realArrow from '../assets/arrow.png';
+
 
 
 const PosedFloatingObj = posed.div({
@@ -54,20 +58,54 @@ export default class KickstartIntro extends React.Component {
 
                 <div id="kickstart-flex" className="kickstart-content">
                     <PosedFloatingObj pose={this.state.floating ? 'visible' : 'hidden'} id="float-anim">
-                       <AnchcorLink offset='100' href='#scroll-soldout'> <img src={arrow} alt="kickstart design" id="arrow" /> </AnchcorLink>
+                        <AnchcorLink offset='100' href='#scroll-soldout'> <img src={arrow} alt="kickstart design" id="arrow" /> </AnchcorLink>
                     </PosedFloatingObj>
                 </div>
 
                 <h1 id="scroll-soldout"><span> WE SOLD OUT IN JUST TWO WEEKS!  </span></h1>
-                <p className="kickstart-content"> Oh yeah! VODO sold 6 months stock in 2 weeks. The next step is to make the drink 100% natural. 
-                In order to make the amazing drink with only natural ingredients we need to make it special ingredients and drink specialists 
+                <p className="kickstart-content">Oh yeah! VODO sold 6 months stock in 2 weeks. The next step is to make the drink 100% natural.
+                In order to make the amazing drink with only natural ingredients we need to make it special ingredients and drink specialists
                 that can bring this idea to life. So we need your help to raise £12,500 to get to the next stage.</p>
-                
-                <img src = {phone} alt="phone reviews"/>
 
+                <div id="sellout-wrapper">
+                    <img src={phone} alt="phone reviews" />
+                    <div id="natural-perc-wrap">
+                        <img src={percent} alt="100% natural" id="percent-wrapper" />
+                        <p id="natural-text">
+                            <ul>
+                                <li> Natural Sweetner </li>
+                                <li> Natural Juices </li>
+                                <li> Natural Flavouring </li>
+                                <li> Natural Colouring </li>
+                                <li> Natural Taste </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div id="leadon-wrapper">
+                    <AnchcorLink offset='100' href='#bottleImage'>
+                        <h1 className="natural"> <span> NOT 100% SURE ? </span></h1>
+                        <p className="natural"> (click here for the final benefits) </p>
+                    </AnchcorLink>
+                </div>
+
+                <div id="bottle-wrap">
+                    <div id="arrowtext-wrap">
+                        <p id="arrow-text"> Natural source of caffine boosted with other minerals to improve brain functions </p>
+                        <p id="arrow-text"> Healthier than coffee and speeds up metabolism </p>
+                        <p id="arrow-text"> Loaded with antioxidannts </p>
+
+                        </div>
+                    <div className="arrows">
+                        <img src={realArrow} alt="drinks do archery" className="arrowsize" />
+                        <img src={realArrow} alt="drinks do archery" className="arrowsize" />
+                        <img src={realArrow} alt="drinks do archery" className="arrowsize" />
+                    </div>
+                    <img src={bottle} alt="apple pear and honey drink - green tea" id="bottleImage" />
+                </div>
             </div>
 
-            
+
         );
     }
 };

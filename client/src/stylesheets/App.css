@@ -770,7 +770,7 @@ color: #fbae49;
 
 #register-wrapper{
     margin-left: -8em;
-    margin-top: 4em;
+    margin-top: 0em;
     padding: 2em;
     display: flex;
     flex-direction: row;
@@ -783,6 +783,7 @@ color: #fbae49;
 
 #pager{
     font-size: 2em;
+    margin-top: 2em;
 }
 
 .submit{
@@ -858,4 +859,77 @@ b{
 .kickstart-content{
     width: 100%;
     text-align: center;
+}
+
+#sellout-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+#percent-wrapper{
+width: 450px;
+height: 260px;
+margin-top: 4em;
+}
+
+#natural-perc-wrap{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 10em;
+}
+
+#natural-text{
+    margin-top: 5.5em;
+    margin-left: 3em;
+    line-height: 2.3;
+    font-size: 1em;
+}
+
+.natural{
+    width: 100%;
+    text-align: center;
+    margin-top: -2em;
+}
+
+#leadon-wrapper{
+    margin-top: -9em;
+    text-transform: uppercase;
+}
+
+
+#easterEGG1{
+    opacity: 0;
+}
+
+#bottle-wrap{
+    margin-top: 14em;
+    margin-bottom: 20em;
+}
+#bottleImage{
+margin-top: -29em;
+margin-left: 32%;
+}
+
+.arrows{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 35em;
+
+}
+
+.arrowsize{
+    transform: scale(0.4);
+    padding-top: 3em;
+}
+
+#arrow-text{
+    width: 30em;
+    margin-top: 3.8em;
+    line-height: 3;
+}
+
+#arrowtext-wrap{
+    float: right;
 }
