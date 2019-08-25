@@ -10,15 +10,15 @@ export default class Reviews extends React.Component {
         return (
             <div id = "review-wrapper">
 
-            <ScrollAnimation delay={10} animateIn="flipInY" duration={8} animateOut="fadeOut">
+            <ScrollAnimation delay={10} animateIn="flipInY" duration={8}>
             <img src = {revone} alt = "amazing reviews" className="revanim"></img>
             </ScrollAnimation>
 
-            <ScrollAnimation delay={800} animateIn="flipInX" duration={3} animateOut="fadeOut">
+            <ScrollAnimation delay={800} animateIn="flipInX" duration={3}>
             <img src = {revtwo} alt = "amazing reviews" className="revanim"></img>
             </ScrollAnimation>
 
-            <ScrollAnimation delay={1000} animateIn="flipInY" duration={6} animateOut="fadeOut">
+            <ScrollAnimation delay={1000} animateIn="flipInY" duration={6}>
             <img src = {revthree} alt = "amazing reviews" className="revanim"></img>
             </ScrollAnimation>
 

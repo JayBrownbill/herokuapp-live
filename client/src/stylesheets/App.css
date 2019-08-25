@@ -8,6 +8,7 @@ body {
     background-size: cover;
     -moz-user-select: none;
     -webkit-user-select: none;
+    line-height: 2;
     /* overflow-x: hidden; */
 }
 
@@ -15,6 +16,7 @@ body {
 p{
     margin: 0;
     font-family: 'kg-solid';
+    font-size: 0.9em;
 }
 a{
     text-decoration: none;
@@ -838,4 +840,22 @@ b{
 
 #vodo-page{
     margin-top: -2em;
+}
+
+#arrow{
+    margin-top: -5em;
+    transform: scale(0.4);
+}
+
+#kickstart-flex{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    text-align: center;
+    width: 100%;
+}
+
+.kickstart-content{
+    width: 100%;
+    text-align: center;
 }
