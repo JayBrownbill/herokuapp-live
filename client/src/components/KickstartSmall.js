@@ -1,8 +1,10 @@
 import React from 'react';
 import Reviews from './Reviews';
-import arrow from '../assets/arrowDown.png';
 import posed from 'react-pose';
 import AnchcorLink from 'react-anchor-link-smooth-scroll';
+
+import arrow from '../assets/arrowDown.png';
+import phone from '../assets/phoneRsz.png'
 
 
 const PosedFloatingObj = posed.div({
@@ -52,15 +54,16 @@ export default class KickstartIntro extends React.Component {
 
                 <div id="kickstart-flex" className="kickstart-content">
                     <PosedFloatingObj pose={this.state.floating ? 'visible' : 'hidden'} id="float-anim">
-                       <AnchcorLink offset='0' href='#'> <img src={arrow} alt="kickstart design" id="arrow" /> </AnchcorLink>
+                       <AnchcorLink offset='100' href='#scroll-soldout'> <img src={arrow} alt="kickstart design" id="arrow" /> </AnchcorLink>
                     </PosedFloatingObj>
                 </div>
 
-                <h1><span> WE SOLD OUT IN JUST TWO WEEKS!  </span></h1>
+                <h1 id="scroll-soldout"><span> WE SOLD OUT IN JUST TWO WEEKS!  </span></h1>
                 <p className="kickstart-content"> Oh yeah! VODO sold 6 months stock in 2 weeks. The next step is to make the drink 100% natural. 
                 In order to make the amazing drink with only natural ingredients we need to make it special ingredients and drink specialists 
                 that can bring this idea to life. So we need your help to raise £12,500 to get to the next stage.</p>
-
+                
+                <img src = {phone} alt="phone reviews"/>
 
             </div>
 
