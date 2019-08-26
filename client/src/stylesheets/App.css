@@ -1053,6 +1053,7 @@
         flex-direction: row;
         width: 100%;
         justify-content: space-around;
+        margin-left: 3em;
     }
     #product-main-conent {
         font-size: 1.5em;
@@ -1063,5 +1064,9 @@
         src: url('../fonts/KGHAPPYSolid.eot?#iefix') format('embedded-opentype'), url('../fonts/KGHAPPYSolid.woff2') format('woff2'), url('../fonts/KGHAPPYSolid.woff') format('woff'), url('../fonts/KGHAPPYSolid.ttf') format('truetype'), url('../fonts/KGHAPPYSolid.svg#KGHAPPYSolid') format('svg');
         font-weight: normal;
         font-style: normal;
+    }
+
+    #vodo-head{
+        color: #fff8eb;
     }
 }
