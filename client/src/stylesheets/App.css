@@ -60,11 +60,9 @@
     input:focus {
         background-color: #fff;
     }
-
-    .hide-desk{
+    .hide-desk {
         display: none;
     }
-
     #desk-navbar {
         display: flex;
         flex-direction: row;
@@ -355,8 +353,7 @@
         padding-left: 2em;
         text-align: center;
     }
-
-    #product-main-conent{
+    #product-main-conent {
         width: 100%;
     }
     .flip-card-one {
@@ -652,8 +649,7 @@
         background: #ffffff;
         padding: 0 10px;
     }
-
-    .hide-mob{
+    .hide-mob {
         display: none;
     }
     .creamBase {
@@ -778,16 +774,15 @@
     #truthImages {
         margin-top: -3em;
         position: absolute;
-        transform: scale(0.8);
+        transform: scale(0.7);
         opacity: 0.5;
         z-index: -1;
         margin-left: -5em;
     }
-
     #lieImages {
         margin-top: -6em;
         position: absolute;
-        transform: scale(0.8);
+        transform: scale(0.7);
         opacity: 0.5;
         z-index: -1;
         margin-left: -5em;
@@ -835,13 +830,11 @@
         margin-top: 3em;
         position: absolute;
     }
-
-    #spinners{
+    #spinners {
         position: absolute;
         margin-left: 9em;
         margin-top: 19em;
     }
-
     #spinball {
         background-color: red;
         position: absolute;
@@ -891,14 +884,12 @@
             transform: rotate(359deg);
         }
     }
-
     #product-Wrapper {
         width: 100vw;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
-
     #productInfo {
         width: 100%;
         height: 100%;
@@ -906,7 +897,6 @@
         padding-top: 5em;
         text-align: center;
     }
-
     .productCards {
         width: 100%;
         height: 40vh;
@@ -915,7 +905,9 @@
         flex-direction: column;
         justify-content: space-evenly;
     }
-
+    #card1 {
+        margin-left: -5em;
+    }
     /* N A V I G A T I O N   S Y S T E M  */
     .bm-responsive {
         padding-top: 2em;
@@ -972,7 +964,6 @@
     #productHead {
         font-size: 4em;
     }
- 
     #product-Wrapper {
         flex-direction: column;
     }
@@ -981,21 +972,19 @@
         font-size: 0.6em;
         margin-left: 10%;
     }
-
     .flip-card-one {
         width: 300px;
         height: 380px;
         background-color: transparent;
         perspective: 1000px;
-        transform: scale(0.8);
+        transform: scale(0.75);
     }
     .flip-card-two {
         width: 500px;
         height: 300px;
         background-color: transparent;
         perspective: 1000px;
-        transform: scale(0.8);
-
+        transform: scale(0.75);
     }
     .flip-card-inner {
         position: relative;
@@ -1040,37 +1029,32 @@
         overflow-y: scroll;
         font-family: 'kg-solid';
         font-size: 1em;
-        
     }
     .card-txt {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 0.9em;
         padding: 1em 4em 1em 4em;
     }
-
-    #mob-card-layout{
+    #mob-card-layout {
         display: flex;
         flex-direction: row;
-        margin-left: -3em;
-    }
+        margin-left: 1.67em;
 
-    .mob-card-wrapper{
+    }
+    .mob-card-wrapper {
         display: flex;
         flex-direction: column;
         width: 100%;
         justify-content: center;
     }
-
-    .mob-card-lower{
+    .mob-card-lower {
         margin-top: -3em;
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: space-around;
-
     }
-
-    #product-main-conent{
+    #product-main-conent {
         font-size: 1.5em;
     }
     @font-face {
