@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.d8b4452f.chunk.css",
+    "main.css": "/static/css/main.db8a711d.chunk.css",
     "main.js": "/static/js/main.120441f3.chunk.js",
     "main.js.map": "/static/js/main.120441f3.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -9,10 +9,10 @@
     "static/js/2.948eba8d.chunk.js": "/static/js/2.948eba8d.chunk.js",
     "static/js/2.948eba8d.chunk.js.map": "/static/js/2.948eba8d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.75dc0157d03153959ccc74d93e606d22.js": "/precache-manifest.75dc0157d03153959ccc74d93e606d22.js",
+    "precache-manifest.92367bc4bf4bf7e24bd968e73cd20c30.js": "/precache-manifest.92367bc4bf4bf7e24bd968e73cd20c30.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.5bc09813.chunk.css.map": "/static/css/2.5bc09813.chunk.css.map",
-    "static/css/main.d8b4452f.chunk.css.map": "/static/css/main.d8b4452f.chunk.css.map",
+    "static/css/main.db8a711d.chunk.css.map": "/static/css/main.db8a711d.chunk.css.map",
     "static/media/100percRSZ.png": "/static/media/100percRSZ.a9256584.png",
     "static/media/App.css": "/static/media/Qirkus-CAPS.5e338845.ttf",
     "static/media/MeditateRsz.png": "/static/media/MeditateRsz.7d00edd6.png",
