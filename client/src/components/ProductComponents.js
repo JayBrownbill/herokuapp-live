@@ -2,6 +2,8 @@ import React from 'react';
 import CardFlav from './CardFlav';
 import CardTea from './CardTea';
 import CardHow from './CardHow';
+import MobileCards from './MobileCards';
+
 
 export default class ProductComponents extends React.Component {
 
@@ -15,17 +17,25 @@ export default class ProductComponents extends React.Component {
               He will be making his way back to the realm to steal the other products for you! 
               Get his memo details.  </p>
 
-            <h1><span> Hover To Reveal Our Products </span></h1>
+            <h1 className="hide-mob"><span> Hover To Reveal Our Products </span></h1>
+            <h1 className="hide-desk"><span> Tap To Reveal Our Products! </span></h1>
 
             </div>
 
-
-            <div id="productCards">
-              <div id="cardOne"> <CardFlav /> </div>
-              <div id="cardTwo"> <CardTea /> </div>
-              <div id="cardThree"> <CardHow /> </div>
+            <div className=" hide-desk">  
+            <MobileCards/>
             </div>
+            
+
+            <div className="productCards">
+              <div className=" hide-mob" id="cardOne"> <CardFlav /> </div>
+              <div className=" hide-mob" id="cardTwo"> <CardTea /> </div>
+              <div className=" hide-mob" id="cardThree"> <CardHow /> </div>
+            </div>
+
+        
           </div>
+        
         );
     }
 };

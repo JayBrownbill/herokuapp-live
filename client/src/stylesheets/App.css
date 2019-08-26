@@ -339,7 +339,7 @@
         background-attachment: fixed;
         background-size: cover;
     }
-    #productCards {
+    .productCards {
         width: 100%;
         height: 40vh;
         padding-top: 2em;
@@ -354,6 +354,10 @@
         padding-top: 5em;
         padding-left: 2em;
         text-align: center;
+    }
+
+    #product-main-conent{
+        width: 100%;
     }
     .flip-card-one {
         width: 300px;
@@ -888,6 +892,30 @@
         }
     }
 
+    #product-Wrapper {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #productInfo {
+        width: 100%;
+        height: 100%;
+        color: #fff8eb;
+        padding-top: 5em;
+        text-align: center;
+    }
+
+    .productCards {
+        width: 100%;
+        height: 40vh;
+        padding-top: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
     /* N A V I G A T I O N   S Y S T E M  */
     .bm-responsive {
         padding-top: 2em;
@@ -941,37 +969,109 @@
         justify-content: space-evenly;
     }
     /* ------------------------------ */
-    body #productHead {
-        font-size: 3em;
+    #productHead {
+        font-size: 4em;
     }
  
-
-    html #product-Wrapper {
+    #product-Wrapper {
         flex-direction: column;
     }
-    body #productInfo {
-        width: 185%;
+    #productInfo {
+        width: 80%;
+        font-size: 0.6em;
+        margin-left: 10%;
     }
-    body #productCards {
-        width: 200%;
+
+    .flip-card-one {
+        width: 300px;
+        height: 380px;
+        background-color: transparent;
+        perspective: 1000px;
+        transform: scale(0.8);
     }
-    body #pager {
+    .flip-card-two {
+        width: 500px;
+        height: 300px;
+        background-color: transparent;
+        perspective: 1000px;
+        transform: scale(0.8);
+
+    }
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: all 1.5s;
+        transform-style: preserve-3d;
+    }
+    .flip-card-one:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    .flip-card-two:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .flav {
+        background-image: url('../assets/CardOneRsz.png');
+    }
+    .tea {
+        background-image: url('../assets/CardTwoRsz.png');
+    }
+    .how {
+        background-image: url('../assets/CardThreeRsz.png');
+    }
+    .flip-card-back {
+        background-image: url('../assets/CardBackClean.png');
+        /* background-color: #694873; */
+        color: white;
+        -webkit-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        overflow-y: scroll;
+        font-family: 'kg-solid';
+        font-size: 1em;
+        
+    }
+    .card-txt {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 0.9em;
+        padding: 1em 4em 1em 4em;
+    }
+
+    #mob-card-layout{
+        display: flex;
+        flex-direction: row;
+        margin-left: -3em;
+    }
+
+    .mob-card-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .mob-card-lower{
+        margin-top: -3em;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+
+    }
+
+    #product-main-conent{
         font-size: 1.5em;
-        margin-left: -3.3em;
-        margin-top: 2.5em;
-    }
-    body #vodo-sec {
-        width: 90%;
-    }
-    body #product-main-conent {
-        font-size: 2em;
-    }
-    body .creamBase {
-        height: 115%;
-    }
-    body #vodoSecText {
-        margin-left: -2em;
-        padding: 1.5em;
     }
     @font-face {
         font-family: 'kg-solid';
