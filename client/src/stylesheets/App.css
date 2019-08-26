@@ -5,6 +5,7 @@
         /* background-color: #81c66f; */
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2381c66f'/%3E%3Cstop offset='1' stop-color='%23694873'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23fff8eb' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23fff8eb' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23fff8eb' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23fff8eb' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.41'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
         background-attachment: fixed;
+        background-position: center center;
         background-size: cover;
         -moz-user-select: none;
         -webkit-user-select: none;
@@ -59,6 +60,11 @@
     input:focus {
         background-color: #fff;
     }
+
+    .hide-desk{
+        display: none;
+    }
+
     #desk-navbar {
         display: flex;
         flex-direction: row;
@@ -329,6 +335,7 @@
         justify-content: space-evenly;
         background-color: #81c66f;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2381c66f'/%3E%3Cstop offset='1' stop-color='%23694873'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23fff8eb' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23fff8eb' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23fff8eb' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23fff8eb' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.41'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+        background-position: center center;
         background-attachment: fixed;
         background-size: cover;
     }
@@ -475,10 +482,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        background-color: #81c66f;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2381c66f'/%3E%3Cstop offset='1' stop-color='%23694873'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23fff8eb' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23fff8eb' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23fff8eb' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23fff8eb' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.41'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
-        background-attachment: fixed;
-        background-size: cover;
     }
     #pager {
         font-size: 2em;
@@ -645,6 +648,10 @@
         background: #ffffff;
         padding: 0 10px;
     }
+
+    .hide-mob{
+        display: none;
+    }
     .creamBase {
         background-color: #fff8eb;
         height: 100%;
@@ -690,6 +697,7 @@
         background-color: #fff8eb;
         margin-top: -5em;
         text-align: center;
+        padding-bottom: 20em;
     }
     .TabList {
         display: flex;
@@ -699,7 +707,8 @@
         padding: 0;
     }
     .react-tabs {
-        width: 100%;
+        width: 80%;
+        margin-left: 10%;
     }
     li#react-tabs-0 {
         padding: 1em;
@@ -763,24 +772,122 @@
         -webkit-user-select: none;
     }
     #truthImages {
-        margin-top: -5em;
+        margin-top: -3em;
         position: absolute;
         transform: scale(0.8);
         opacity: 0.5;
         z-index: -1;
+        margin-left: -5em;
     }
 
+    #lieImages {
+        margin-top: -6em;
+        position: absolute;
+        transform: scale(0.8);
+        opacity: 0.5;
+        z-index: -1;
+        margin-left: -5em;
+    }
     #fallenCptn {
-        margin-left: 5em;
         margin-top: -36em;
     }
-
     .toggleTxt {
-        font-size: 0.57em;
-        padding-top: 5em;
+        font-size: 0.3em;
+        padding-top: 1em;
         padding-right: 5em;
         color: #694873;
+        padding-bottom: 10em;
     }
+    #truth-text-Wrapper {
+        width: 70vw;
+        font-size: 1.5em;
+        margin-left: 2em;
+    }
+    #lies-text-Wrapper {
+        width: 65vw;
+        margin-left: 2.4em;
+        font-size: 1.5em;
+    }
+    #aboutTitle {
+        text-align: center;
+        padding-bottom: 3px;
+        font-size: 3em;
+    }
+    #aboutTxt {
+        font-size: 1em;
+        color: #fff8eb;
+        background-color: #694873;
+        border-radius: 10px;
+        padding: 1em;
+    }
+    #meditate-focal {
+        margin-left: 5em;
+        margin-top: 13em;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+    }
+    #float-anim {
+        margin-left: 1.5em;
+        margin-top: 3em;
+        position: absolute;
+    }
+
+    #spinners{
+        position: absolute;
+        margin-left: 9em;
+        margin-top: 19em;
+    }
+
+    #spinball {
+        background-color: red;
+        position: absolute;
+        width: 0.8em;
+        margin-top: 2em;
+        animation: rotation 18s infinite linear;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+    }
+    #spintea {
+        position: absolute;
+        width: 0.8em;
+        margin-top: 2em;
+        animation: rotation 23s infinite linear;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+    }
+    #spinbell {
+        position: absolute;
+        width: 0.8em;
+        margin-top: 2em;
+        animation: rotation 30s infinite linear;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+    }
+    #spinmusic {
+        position: absolute;
+        width: 0.8em;
+        margin-top: 2em;
+        animation: rotation 25s infinite linear;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+    }
+    #spinbook {
+        position: absolute;
+        width: 0.8em;
+        margin-top: 2em;
+        animation: rotation 36s infinite linear;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+    }
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
+    }
+
     /* N A V I G A T I O N   S Y S T E M  */
     .bm-responsive {
         padding-top: 2em;
@@ -837,22 +944,8 @@
     body #productHead {
         font-size: 3em;
     }
-    html #truth-text-Wrapper {
-        width: 90vw;
-        font-size: 1.2em;
-    }
-    html #lies-text-Wrapper {
-        margin-top: -4em;
-        width: 90vw;
-        font-size: 1.1em;
-    }
-    html #meditate-focal {
-        margin-left: 2em;
-    }
-    body #spinners {
-        margin-left: -2em;
-        margin-top: 1.7em;
-    }
+ 
+
     html #product-Wrapper {
         flex-direction: column;
     }

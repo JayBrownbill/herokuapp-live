@@ -3,7 +3,6 @@ import React from 'react';
 import '../stylesheets/App.css';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
-import MediaQuery from 'react-responsive';
 
 
 import WelcomeComponents from './WelcomeComponents'
