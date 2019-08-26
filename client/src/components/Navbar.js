@@ -1,5 +1,6 @@
 import React from 'react'
-import { slide as Menu } from 'react-burger-menu';
+import { stack as Menu } from 'react-burger-menu';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 
 
@@ -7,15 +8,12 @@ function Navbar() {
 
     return (
         <Menu>
-        <a className="navbar" href="index.html"> 
-         Home
-        </a>
-        <a className="navbar" href="index.html"> 
-        Product
-       </a>
-       <a className="navbar" href="index.html"> 
-       Portfolio
-      </a>
+        <ul className="navbar">
+        <li className="bm-responsive"><AnchorLink offset='0' href='#landing-wrap'>HOME</AnchorLink></li>
+        <li className="bm-responsive"><AnchorLink offset='0' href='#landing-wrap'>PRODUCT</AnchorLink></li>
+        <li className="bm-responsive"><AnchorLink offset='0' href='#landing-wrap'>KICKSTART</AnchorLink></li>
+        
+        </ul>
         </Menu>
     )
 }

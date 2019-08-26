@@ -23,17 +23,18 @@ export default class App extends React.Component {
 
   render() {
     return (
-      
+
       <div id="application">
 
-      <MediaQuery maxDeviceWidth={1000}>
+        <div id="navMobile">
           <Navbar />
-          </MediaQuery>
+        </div>
 
-        <MediaQuery minDeviceWidth={1001}>
-          <DeskNav/>
-          </MediaQuery>
-        
+        <div id="navDesktop">
+          <DeskNav />
+        </div>
+
+
         <div id="landing-wrap" >
           <WelcomeComponents />
         </div>
