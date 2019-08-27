@@ -22,7 +22,7 @@ export default class VodoSec extends React.Component {
             <div id = "vodoSecText">
 
 
-            <div id="bottleUp">
+            <div class="hide-mob" id="bottleUp">
             <ScrollAnimation delay={800} animateIn="flipInY" duration={1} animateOut="flipOutY" >
             <img src = {bottleUp} alt = "howItsMade"/>
             </ScrollAnimation>

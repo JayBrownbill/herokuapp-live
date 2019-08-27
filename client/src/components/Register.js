@@ -38,24 +38,30 @@ export default class Register extends React.Component {
             email
         });
 
-        axios.post(`https://vodoorealm.herokuapp.com/api/add`, data,{
-            headers : {
+        axios.post(`https://vodoorealm.herokuapp.com/api/add`, data, {
+            headers: {
                 'Content-Type': 'application/json',
             }
         })
-        .then(res =>{
-            console.log(res);
-            console.log(res.data);
-            console.log(usrname + " "  + email);
-        })
+            .then(res => {
+                console.log(res);
+                console.log(res.data);
+                console.log(usrname + " " + email);
+            })
     }
 
 
     render() {
         return (
             <div id="register-wrapper" >
+
+                <div className="hide-desk">
+                    <h1 id="pager"> <span> SIGN UP BELOW </span> </h1>
+                </div>
+
                 <div>
                     <img src={pager} alt="Captains Pager" id="vodo-page" />
+                    
                     <form onSubmit={this.sumbitHandler}>
 
                         <input type="text"
@@ -76,7 +82,7 @@ export default class Register extends React.Component {
                     </form>
                 </div>
 
-                <div>
+                <div className="hide-mob">
                     <h1 id="pager"> <span> Sign up to get a message from Captain Stranges pager.</span> </h1>
                 </div>
 
