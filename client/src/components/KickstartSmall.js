@@ -96,7 +96,7 @@ export default class KickstartIntro extends React.Component {
                         <p id="arrow-text"> Loaded with antioxidannts </p>
 
                         </div>
-                    <div className="arrows">
+                    <div className="arrows hide-mob">
                         <img src={realArrow} alt="drinks do archery" className="arrowsize" />
                         <img src={realArrow} alt="drinks do archery" className="arrowsize" />
                         <img src={realArrow} alt="drinks do archery" className="arrowsize" />
