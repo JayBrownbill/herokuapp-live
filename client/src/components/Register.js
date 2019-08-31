@@ -29,6 +29,7 @@ export default class Register extends React.Component {
     sumbitHandler = event => {
 
         event.preventDefault();
+        alert(`Thank you ` + this.state.usrname + ` your email has been submitted`);
 
         const usrname = this.state.usrname;
         const email = this.state.email;
@@ -48,6 +49,7 @@ export default class Register extends React.Component {
                 console.log(res.data);
                 console.log(usrname + " " + email);
             })
+
     }
 
 
@@ -78,7 +80,7 @@ export default class Register extends React.Component {
 
                         <input type="submit"
                             value="Submit"
-                            className="BtnLarge submit" />
+                            className="submit"/>
                     </form>
                 </div>
 

@@ -29,22 +29,33 @@
     h1 span {
         background: #ffffff;
         padding: 0 10px;
+
     }
     label {
         font-size: 1.5em;
         font-family: 'kg-solid';
         color: #fbae49;
     }
-    input {
-        font-size: 0.5em;
+
+    input{
         font-family: 'kg-solid';
-        margin-top: 2em;
+        height: 2em;
+        width: 70%;
+        padding: 3px;
+        margin-top: 2.5em;
         margin-left: 2em;
+        border-radius: 1em;
+        border-style: none;
+        font-size: 0.5em;
     }
+    input:focus{
+        border-radius: 0em;
+    }
+
     form {
-        margin-left: 17em;
+        margin-left: 16.7em;
         position: relative;
-        margin-top: -16.21em;
+        margin-top: -16.80em;
         padding-bottom: 10em;
         width: 13em;
     }
@@ -490,7 +501,15 @@
     }
     .submit {
         margin-top: 0em;
+        margin-left: 0.5em;
         position: absolute;
+        width: 7em;
+        cursor: pointer;
+        background-color: #694873;
+        color: white;
+        font-size: 0.55em;
+        height: 2em;
+
         /* ********SUBMIT BUTTON CSS ON HOVER AND ACTIVE NEEDS CHANGING *********/
     }
     #vodo-sec {
@@ -517,6 +536,7 @@
         color: #694873;
     }
     #review-wrapper {
+        margin-top: -3em;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -602,7 +622,87 @@
     body #navDesktop {
         display: block;
     }
+    #progbar{
+        width: 100%;
+        transform: scale(0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -20em;
+
+    }
+
+    #review-head{
+        width: 100%;
+        text-align: center;
+        margin-top: 3em;
+        font-size: 1.5em;
+    }
+    #regform-final{
+        /* background-color: rgba(111, 158, 198, 0.5); */
+        background-color: rgba(	184, 140, 250, 0.5);
+        width: 30%;
+        padding: 1em;
+        border-radius: 2em;
+    }
+
+    #reg-head{
+        color: #694873;
+    }
+
+    #reg-sub{
+        font-size: 1em;
+        padding: 0.5em 0 -4em 0;
+    }
+
+    input.kickregister{
+        height: 2.4em;
+        width: 100%;
+        padding: 3px;
+        margin-top: 1em;
+        margin-left: 0;
+        border-radius: 1em;
+        border-style: none;
+        font-size: 0.8em;
+
+    }
+    input.kickregister:focus{
+        border-radius: 0em;
+    }
+
+    .submitreg{
+        height: 3em;
+        padding: 0.35em;
+        transform: scale(1.2);
+        border-radius: 1em;
+        margin-top: 2.3em;
+        width: 60%;
+        margin-left: 7em;
+        cursor: pointer;
+        background-color: #80c66f79;
+        color: white;
+        font-family: 'kg-solid';
+        border-style: none;
+        transition: all 2s;
+    }
+
+    .submitreg:hover{
+        background-color: #80c66f;
+
+    }
+
+
+    #kickstart-register{
+        position: absolute;
+        width: 100%;
+        margin-left: -15em;
+        margin-top: 20em;
+    }
 }
+
+
+/* DESKTOP FOOTER CODE */
+
 
 @media (max-width: 999px) {
     /* For mobile phones: */
@@ -1139,4 +1239,8 @@
     b {
         color: #694873;
     }
+
+
+
+     /*  mobile phone footer code! */
 }

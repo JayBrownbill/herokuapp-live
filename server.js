@@ -26,16 +26,6 @@ app.use((req, res, next) => {
 app.use(express.static('client/build')); //Middleware
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
-
-
-// var connection = mysql.createConnection({
-//   host: 'us-cdbr-iron-east-02.cleardb.net',
-//   user: 'b4b4afbc10b55e',
-//   password: '83cf1c87',                             //TURN OFF WHILST POOL TESTING****
-//   port: '3306',
-//   database: 'heroku_d4f17cbece4a437',
-// });
-
 var pool = mysql.createPool({
   connectionLimit: 100,
   host: 'us-cdbr-iron-east-02.cleardb.net',
@@ -44,7 +34,6 @@ var pool = mysql.createPool({
   port: '3306',
   database: 'heroku_d4f17cbece4a437',
 });
-
 
 
 app.get('/api/responsecheck', (req, res) => {
@@ -111,34 +100,3 @@ app.get('*', (req, res) => {
 
 
 process.on('SIGINT', () => { console.log("Bye bye!"); process.exit(); });
-
-
-
-// connection.on('error', function (err) {                 
-//    console.log('caught this error: ' + err.toString());
-// });
-
-
-  //   connection.query(query_ReadAll, function (err, rows, fields) {
-  //     if (!!err) {
-  //       res.sendStatus(500);
-  //       console.log("Could not recieve database results...");            //OLD DB SYSTEM
-
-  //     } else {
-  //       res.json(rows);
-  //       console.log("Query Successful... All users showing (refer to browser)");
-  //     }
-  //   });
-
-
-
-    // connection.query(query_Insert, [req.body.usrname, req.body.email], (err, results, fields) => {
-  //   if (err) {
-  //     console.log('Error inserting new user...' + err);
-  //     res.sendStatus(500);
-  //     return;
-  //   } else {
-  //     console.log('New user has successfully been inserted to DB: ', results.insertedId);
-  //     res.end();
-  //   }
-  // });

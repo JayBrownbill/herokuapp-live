@@ -8,8 +8,9 @@ import ScrollAnimation from 'react-animate-on-scroll'
 export default class Reviews extends React.Component {
     render() {
         return (
+            <div id="head-wrap">
+            <h1 id="review-head"><span>  CUSTOMER REVIEWS </span></h1>
             <div id="review-wrapper">
-
                 <div className="hide-mob">
                     <ScrollAnimation delay={10} animateIn="flipInY" duration={8}>
                         <img src={revone} alt="amazing reviews" className="revanim"></img>
@@ -25,6 +26,7 @@ export default class Reviews extends React.Component {
                         <img src={revthree} alt="amazing reviews" className="revanim"></img>
                     </ScrollAnimation>
                 </div>
+            </div>
             </div>
         )
     }
