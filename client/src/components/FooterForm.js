@@ -25,7 +25,7 @@ export default class FooterForm extends React.Component {
         this.setState({ email: event.target.value });
     }
 
-    sumbitHandler = event => {
+    sumbitHandler = event => { 
 
         alert(`Thank you ` + this.state.usrname + ` your email has been submitted`);
         event.preventDefault();
