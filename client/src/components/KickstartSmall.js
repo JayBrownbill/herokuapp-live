@@ -11,7 +11,6 @@ import phone from '../assets/phoneRsz.png';
 import percent from '../assets/100percRSZ.png';
 import bottle from '../assets/choppedBottle.png'
 import realArrow from '../assets/arrow.png';
-import progbar from '../assets/progressRsz.png';
 
 
 
@@ -106,7 +105,6 @@ export default class KickstartIntro extends React.Component {
                         <img src={realArrow} alt="drinks do archery" className="arrowsize" />
                     </div>
                     <img src={bottle} alt="apple pear and honey drink - green tea" id="bottleImage" />
-                    <img src={progbar} alt="progress bar for kickstarter campaign" id="progbar" />
                 </div>
             </div>
 

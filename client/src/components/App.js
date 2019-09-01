@@ -14,6 +14,7 @@ import ProductComponents from './ProductComponents.js';
 import Register from './Register';
 import VodoSec from './VodoSec';
 import KickstartIntro from './KickstartSmall';
+import Footer from './Footer';
 
 
 
@@ -25,14 +26,13 @@ export default class App extends React.Component {
 
       <div id="application">
 
-        <div id="navMobile">
+        <div className="hide-desk" id="navMobile">
           <Navbar />
         </div>
 
         <div id="navDesktop">
           <DeskNav />
         </div>
-
 
         <div id="landing-wrap" >
           <WelcomeComponents />
@@ -57,9 +57,12 @@ export default class App extends React.Component {
           <KickstartIntro />
         </div>
 
+        <div id="footer">
+        </div>
 
-
-
+        <footer>
+        <Footer/>        
+        </footer>
       </div>
     );
   }
