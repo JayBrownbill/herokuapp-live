@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.abdf2ad6.chunk.css",
-    "main.js": "/static/js/main.1a2637b7.chunk.js",
-    "main.js.map": "/static/js/main.1a2637b7.chunk.js.map",
+    "main.css": "/static/css/main.86da32de.chunk.css",
+    "main.js": "/static/js/main.bc429f39.chunk.js",
+    "main.js.map": "/static/js/main.bc429f39.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/css/2.5bc09813.chunk.css": "/static/css/2.5bc09813.chunk.css",
-    "static/js/2.93beaa90.chunk.js": "/static/js/2.93beaa90.chunk.js",
-    "static/js/2.93beaa90.chunk.js.map": "/static/js/2.93beaa90.chunk.js.map",
+    "static/js/2.8c723111.chunk.js": "/static/js/2.8c723111.chunk.js",
+    "static/js/2.8c723111.chunk.js.map": "/static/js/2.8c723111.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.79ecb4ba84d00e409aabc2f4e737d0bc.js": "/precache-manifest.79ecb4ba84d00e409aabc2f4e737d0bc.js",
+    "precache-manifest.c20ddb74100744384b65ae4338f0d694.js": "/precache-manifest.c20ddb74100744384b65ae4338f0d694.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.5bc09813.chunk.css.map": "/static/css/2.5bc09813.chunk.css.map",
-    "static/css/main.abdf2ad6.chunk.css.map": "/static/css/main.abdf2ad6.chunk.css.map",
+    "static/css/main.86da32de.chunk.css.map": "/static/css/main.86da32de.chunk.css.map",
     "static/media/100percRSZ.png": "/static/media/100percRSZ.a9256584.png",
     "static/media/App.css": "/static/media/Qirkus-CAPS.5e338845.ttf",
     "static/media/MeditateRsz.png": "/static/media/MeditateRsz.7d00edd6.png",
@@ -27,6 +27,7 @@
     "static/media/choppedBottle.png": "/static/media/choppedBottle.842c6707.png",
     "static/media/fallingRsz.png": "/static/media/fallingRsz.7c73da7e.png",
     "static/media/handRsz.png": "/static/media/handRsz.03a2ae68.png",
-    "static/media/phoneRsz.png": "/static/media/phoneRsz.bfcbdc35.png"
+    "static/media/phoneRsz.png": "/static/media/phoneRsz.bfcbdc35.png",
+    "static/media/progressRsz.png": "/static/media/progressRsz.49fec730.png"
   }
 }
