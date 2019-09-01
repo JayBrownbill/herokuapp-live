@@ -52,7 +52,7 @@ app.post('/api/add', (req, res) => {
   pool.getConnection(function (err, connection) {
     if (!!err) {
       res.sendStatus(500);
-      console.log('Error inserting new user...' + err);
+      console.log('Error inserting new user... ' + err);
       connection.release();
     } else {
       connection.query(query_Insert, [req.body.usrname, req.body.email], function (err, result) {
