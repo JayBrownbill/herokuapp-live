@@ -5,7 +5,7 @@ import SecComponentOne from './SecComponentOne';
 import SecComponentTwo from './SecComponentTwo';
 import SecComponentThree from './SecComponentThree';
 import ScrollAnimation from 'react-animate-on-scroll';
-import bottleUp from '../assets/BottleRsz.png';
+import bottleUp from '../assets/NewBottleRsz.png';
 
 
 
