@@ -61,7 +61,7 @@ export default class App extends React.Component {
         </div>
 
         <footer>
-        <Footer/>        
+          <Footer />
         </footer>
       </div>
     );
