@@ -7,7 +7,7 @@ import FooterForm from './FooterForm';
 
 
 import arrow from '../assets/arrowDown.png';
-import phone from '../assets/phoneRsz.png';
+import phone from '../assets/handFInal.png';
 import percent from '../assets/100percRSZ.png';
 import bottle from '../assets/choppedBottle.png'
 import realArrow from '../assets/arrow.png';
@@ -71,7 +71,7 @@ export default class KickstartIntro extends React.Component {
                 that can bring this idea to life. So we need your help to raise £12,500 to get to the next stage.</p>
 
                 <div id="sellout-wrapper">
-                    <a href=" https://youtu.be/rugnGHexOMo"> <img src={phone} alt="phone reviews" /> </a>
+                    <a href=" https://youtu.be/rugnGHexOMo"> <img src={phone} alt="phone reviews"/> </a>
                     <div className="hide-mob" id="natural-perc-wrap">
                         <img src={percent} alt="100% natural" id="percent-wrapper" />
                         <p id="natural-text">
