@@ -39,7 +39,7 @@ export default class App extends React.Component {
         </div>
 
         <div id="togglebtn">
-          <ScrollAnimation animateIn="bounceInRight" duration={3} animateOut="bounceOutRight">
+          <ScrollAnimation animateIn="bounceInRight" duration={3}>
             <About />
             <Toggle />
           </ScrollAnimation>

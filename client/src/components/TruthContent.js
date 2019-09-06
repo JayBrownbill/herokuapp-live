@@ -38,7 +38,7 @@ const PosedCaptnDrop = posed.div({
     visible: {
         delay: 10,
         opacity: 1,
-        y: 800,
+        y: 570,
 
         transition: {
             opacity: { ease: 'easeOut', duration: 5000 },

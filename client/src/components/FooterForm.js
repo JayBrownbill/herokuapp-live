@@ -55,7 +55,7 @@ export default class FooterForm extends React.Component {
             <div id="kickstart-register">
                 <form id="regform-final" onSubmit={this.sumbitHandler}>
                     <h1 id="reg-head"> Register </h1>
-                    <h4 id="reg-sub"> Your final chance to sign up with a chance to get a free voodoo crate </h4>
+                    <h4 id="reg-sub"> Sign up to get 30% off </h4>
                     <input name="usrname"
                         className="kickregister"
                         type="text"

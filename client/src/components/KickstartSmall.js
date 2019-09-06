@@ -71,7 +71,7 @@ export default class KickstartIntro extends React.Component {
                 that can bring this idea to life. So we need your help to raise £12,500 to get to the next stage.</p>
 
                 <div id="sellout-wrapper">
-                    <a href=" https://youtu.be/rugnGHexOMo"> <img src={phone} alt="phone reviews"/> </a>
+                    <a href="https://youtu.be/wY2a40fSuFk"> <img src={phone} alt="phone reviews" /> </a>
                     <div className="hide-mob" id="natural-perc-wrap">
                         <img src={percent} alt="100% natural" id="percent-wrapper" />
                         <p id="natural-text">
@@ -87,25 +87,36 @@ export default class KickstartIntro extends React.Component {
                 </div>
                 <div className="hide-mob" id="leadon-wrapper">
                     <AnchcorLink offset='60' href='#bottleImage'>
-                        <p className="natural"> (See our progress below!) </p>
+                        <p className="natural"> (Why VODO?) </p>
                     </AnchcorLink>
                 </div>
-                
+
 
                 <div id="bottle-wrap">
+
+                    <div id="footreg">
                     <FooterForm />
-                    <div id="arrowtext-wrap">
-                        <p id="arrow-text"> Natural source of caffine boosted with other minerals to improve brain functions </p>
-                        <p id="arrow-text"> Healthier than coffee and speeds up metabolism </p>
-                        <p id="arrow-text"> Loaded with antioxidannts </p>
-                        </div>
+                    </div>
+
+                    <div id="chopped-wrapper">
+                    <img src={bottle} alt="apple pear and honey drink - green tea" id="bottleImage" />
+                    </div>
+
                     <div className="arrows hide-mob">
                         <img src={realArrow} alt="drinks do archery" className="arrowsize" />
                         <img src={realArrow} alt="drinks do archery" className="arrowsize" />
                         <img src={realArrow} alt="drinks do archery" className="arrowsize" />
                     </div>
-                    <img src={bottle} alt="apple pear and honey drink - green tea" id="bottleImage" />
+
+                    <div id="arrowtext-wrap">
+                        <p id="arrow-text"> Natural source of caffine boosted with other minerals to improve brain functions </p>
+                        <p id="arrow-text"> Healthier than coffee and speeds up metabolism </p>
+                        <p id="arrow-text"> Loaded with antioxidannts </p>
+                    </div>
+
+
                 </div>
+
             </div>
 
 
