@@ -4,12 +4,14 @@ import AnchcorLink from 'react-anchor-link-smooth-scroll';
 
 import Reviews from './Reviews';
 import FooterForm from './FooterForm';
+import MobileBottle from './MobileBottle';
+import MobileRegister from './MobileRegister';
 
 
 import arrow from '../assets/arrowDown.png';
 import phone from '../assets/handFInal.png';
 import percent from '../assets/100percRSZ.png';
-import bottle from '../assets/choppedBottle.png'
+import bottle from '../assets/choppedBottle.png';
 import realArrow from '../assets/arrow.png';
 
 
@@ -73,7 +75,7 @@ export default class KickstartIntro extends React.Component {
 
                 <div id="sellout-wrapper">
                     <a href="https://youtu.be/wY2a40fSuFk">
-                        <img className="hide-mob"src={phone} alt="phone reviews" />
+                        <img className="hide-mob" src={phone} alt="phone reviews" />
                     </a>
 
                     <div className="hide-mob" id="natural-perc-wrap">
@@ -95,6 +97,10 @@ export default class KickstartIntro extends React.Component {
                     </AnchcorLink>
                 </div>
 
+                <div id="bottle-wrap-mob" className="hide-desk"> <MobileBottle />  </div>
+                <div className="hide-desk">
+                    <MobileRegister />
+                </div>
 
                 <div id="bottle-wrap" className="hide-mob">
 

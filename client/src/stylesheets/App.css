@@ -609,7 +609,7 @@
         opacity: 0;
     }
     #bottle-wrap {
-        margin-top: 15em;
+        margin-top: 12em;
         padding-bottom: 2em;
         width: 100%;
         display: flex;
@@ -1276,7 +1276,7 @@
         font-family: 'kg-solid';
         font-size: 0.4em;
     }
-    form {
+    #pager-input-wrap {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -1319,7 +1319,6 @@
         color: #fff8eb;
     }
     img.revanim {
-
         margin-top: 0em;
         padding-bottom: 18em;
         width: 100%;
@@ -1339,11 +1338,68 @@
         text-align: center;
         margin-top: 1em;
     }
-
-    #head-wrap{
+    #head-wrap {
         height: 9em;
     }
+    #footer-bottle-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        color: #fff8eb;
+    }
+    #arrow-text {
+        font-size: 0.6em;
+    }
+    #bottlemob-wrap {
+        transform: scale(0.7);
+        margin-top: -5em;
+        /* margin-left: -13em; */
+    }
+    #mobile-reg-form {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #regform-mobile {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+        transform: scale(1.5);
+        font-family: 'kg-solid';
+        background-color: rgba( 184, 140, 250, 0.5);
 
 
+    }
+    input {
+        font-family: 'kg-solid';
+        width: 70%;
+        height: 2em;
+        padding: 3px;
+        margin-left: 1em;
+        border-radius: 1em;
+        border-style: none;
+        font-size: 0.5em;
+        margin: 0 auto;
+    }
+    .submitreg {
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 1em;
+    }
+
+    .kickregister{
+        margin-top: 1em;
+    }
+
+    .submit{
+        margin-left: 26%;
+    }
+
+    #reg-sub{
+        margin-top: -2em;
+    }
     /*  mobile phone footer code! */
 }
