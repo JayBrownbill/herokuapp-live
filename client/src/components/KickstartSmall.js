@@ -61,17 +61,21 @@ export default class KickstartIntro extends React.Component {
 
                 <div id="kickstart-flex" className="kickstart-content">
                     <PosedFloatingObj pose={this.state.floating ? 'visible' : 'hidden'} id="float-anim">
-                        <AnchcorLink offset='100' href='#scroll-soldout'> <img src={arrow} alt="kickstart design" id="arrow" /> </AnchcorLink>
+                        <AnchcorLink offset='100' href='#scroll-soldout'>
+                            <img src={arrow} alt="kickstart design" id="arrow" className="hide-mob" /> </AnchcorLink>
                     </PosedFloatingObj>
                 </div>
 
                 <h1 id="scroll-soldout"><span> WE SOLD OUT IN JUST TWO WEEKS!  </span></h1>
-                <p className="kickstart-content">Oh yeah! VODO sold 6 months stock in 2 weeks. The next step is to make the drink 100% natural.
+                <p className="kickstart-content">Oh yeah! VODO sold <b> 6 months stock in 2 weeks.</b> The next step is to make the drink 100% natural.
                 In order to make the amazing drink with only natural ingredients we need to make it special ingredients and drink specialists
                 that can bring this idea to life. So we need your help to raise £12,500 to get to the next stage.</p>
 
                 <div id="sellout-wrapper">
-                    <a href="https://youtu.be/wY2a40fSuFk"> <img src={phone} alt="phone reviews" /> </a>
+                    <a href="https://youtu.be/wY2a40fSuFk">
+                        <img className="hide-mob"src={phone} alt="phone reviews" />
+                    </a>
+
                     <div className="hide-mob" id="natural-perc-wrap">
                         <img src={percent} alt="100% natural" id="percent-wrapper" />
                         <p id="natural-text">
@@ -92,14 +96,14 @@ export default class KickstartIntro extends React.Component {
                 </div>
 
 
-                <div id="bottle-wrap">
+                <div id="bottle-wrap" className="hide-mob">
 
-                    <div id="footreg">
-                    <FooterForm />
+                    <div className="hide-mob" id="footreg">
+                        <FooterForm />
                     </div>
 
                     <div id="chopped-wrapper">
-                    <img src={bottle} alt="apple pear and honey drink - green tea" id="bottleImage" />
+                        <img src={bottle} alt="apple pear and honey drink - green tea" id="bottleImage" />
                     </div>
 
                     <div className="arrows hide-mob">
