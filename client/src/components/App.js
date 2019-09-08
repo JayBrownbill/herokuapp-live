@@ -4,6 +4,8 @@ import '../stylesheets/App.css';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import progbar from '../assets/progressRsz.png';
+
 
 import WelcomeComponents from './WelcomeComponents'
 import Navbar from './Navbar';
@@ -58,6 +60,10 @@ export default class App extends React.Component {
         </div>
 
         <div id="footer">
+        <div className="hide-desk" id="funds-bottle-mob">
+        <h3 id="funds-title-mob"> Only <b>£12,500</b> till the next launch </h3>
+        <img src={progbar} alt="progress bar for kickstarter campaign" id="progbar-mob" />
+    </div>
         </div>
 
         <footer>

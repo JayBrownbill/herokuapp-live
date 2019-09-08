@@ -1370,8 +1370,8 @@
         transform: scale(1.5);
         font-family: 'kg-solid';
         background-color: rgba( 184, 140, 250, 0.5);
-
-
+        padding-bottom: 2em;
+        padding-top: 2em;
     }
     input {
         font-family: 'kg-solid';
@@ -1387,19 +1387,50 @@
     .submitreg {
         width: 30%;
         margin: 0 auto;
+        background-color: #fff;
+        margin-top: 1em;
+        border-radius: 10px;
+        font-family: 'kg-solid';
+    }
+    .kickregister {
         margin-top: 1em;
     }
-
-    .kickregister{
-        margin-top: 1em;
-    }
-
-    .submit{
+    .submit {
         margin-left: 26%;
     }
-
-    #reg-sub{
+    #reg-sub {
         margin-top: -2em;
+    }
+    #foot-wrapper {
+        margin-top: -5em;
+    }
+    #footer-left-wrap {
+        width: 100%;
+        font-size: 2em;
+    }
+    #footer-min-cc {
+        font-size: 0.3em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding-left: 1em;
+    }
+    #footer-content-socials {
+        margin-top: -1em;
+    }
+    #funds-bottle-mob {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4em;
+    }
+    #funds-title-mob {
+        color: #fff8eb;
+        text-align: center;
+        font-size: 1.4em;
+        font-family: 'kg-solid';
+    }
+    #progbar-mob {
+        margin-top: -30%;
+        align-self: center;
+        transform: scale(0.4);
     }
     /*  mobile phone footer code! */
 }

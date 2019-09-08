@@ -25,18 +25,22 @@ export default class Footer extends React.Component {
                     </div>
 
                     <p id="footer-content-socials"> Follow our socials <br /> or email us at: shout@vodo.info  </p>
+                    <p className="hide-desk" id="footer-min-cc"> An interactive web application by Creators Corner LTD </p>
+
                 </div>
 
-                <div id="funds-height">
+                <div className="hide-mob" id="funds-height">
                     <h3 id="funds-title"> Only <b>£12,500</b> till the next launch </h3>
                     <img src={progbar} alt="progress bar for kickstarter campaign" id="progbar" />
                 </div>
 
-                <div id="footer-right-wrap">
-                <p id="regular"> An interactive web application by: </p>
+
+
+                <div className="hide-mob" id="footer-right-wrap">
+                    <p className="hide-mob" id="regular"> An interactive web application by: </p>
 
                     <div id="CCLogo-foot">
-                        <img src={CCLogo} alt="Creators Corner Copyright"/>
+                        <img src={CCLogo} alt="Creators Corner Copyright" className="hide-mob" />
                     </div>
                 </div>
             </div>
