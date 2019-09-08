@@ -1385,12 +1385,13 @@
         margin: 0 auto;
     }
     .submitreg {
-        width: 30%;
+        width: 40%;
         margin: 0 auto;
         background-color: #fff;
         margin-top: 1em;
         border-radius: 10px;
         font-family: 'kg-solid';
+        font-size: 0.6em;
     }
     .kickregister {
         margin-top: 1em;
