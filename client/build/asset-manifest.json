@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7ac2a7fc.chunk.css",
+    "main.js": "/static/js/main.8fc9afcf.chunk.js",
+    "main.js.map": "/static/js/main.8fc9afcf.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.5bc09813.chunk.css": "/static/css/2.5bc09813.chunk.css",
+    "static/js/2.a4607ad4.chunk.js": "/static/js/2.a4607ad4.chunk.js",
+    "static/js/2.a4607ad4.chunk.js.map": "/static/js/2.a4607ad4.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.76189c994f3c99cfe88bd8e0b0892586.js": "/precache-manifest.76189c994f3c99cfe88bd8e0b0892586.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.5bc09813.chunk.css.map": "/static/css/2.5bc09813.chunk.css.map",
+    "static/css/main.7ac2a7fc.chunk.css.map": "/static/css/main.7ac2a7fc.chunk.css.map",
+    "static/media/100percRSZ.png": "/static/media/100percRSZ.a9256584.png",
+    "static/media/App.css": "/static/media/Qirkus-CAPS.5e338845.ttf",
+    "static/media/MeditateRsz.png": "/static/media/MeditateRsz.7d00edd6.png",
+    "static/media/NewBottleRsz.png": "/static/media/NewBottleRsz.62e34548.png",
+    "static/media/Pager-Rsz.png": "/static/media/Pager-Rsz.0ac8f40f.png",
+    "static/media/PlaceHolder.png": "/static/media/PlaceHolder.258bffbe.png",
+    "static/media/RealmRsz.png": "/static/media/RealmRsz.7e0790fa.png",
+    "static/media/RevOneRsz.png": "/static/media/RevOneRsz.e30a44b5.png",
+    "static/media/RevThreeRsz.png": "/static/media/RevThreeRsz.fd8117fd.png",
+    "static/media/RevTwoRsz.png": "/static/media/RevTwoRsz.ae5cc9cf.png",
+    "static/media/VodoNoStrange.png": "/static/media/VodoNoStrange.dfe0fe1e.png",
+    "static/media/choppedBottle.png": "/static/media/choppedBottle.842c6707.png",
+    "static/media/fallingRsz.png": "/static/media/fallingRsz.7c73da7e.png",
+    "static/media/handFInal.png": "/static/media/handFInal.c2cc3c41.png",
+    "static/media/handRsz.png": "/static/media/handRsz.03a2ae68.png",
+    "static/media/progressRsz.png": "/static/media/progressRsz.49fec730.png"
+  }
+}

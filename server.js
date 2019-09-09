@@ -94,7 +94,7 @@ app.get("/api/databasecheck", (req, res) => {
 
 // Catch all code which routes users back to homepage
 app.get('*', (req, res) => {
-  res.send(path.join(__dirname, 'client', 'build', 'index.html '));
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
 
 
