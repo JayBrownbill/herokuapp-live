@@ -40,8 +40,12 @@ app.get('/api/responsecheck', (req, res) => {
   res.send({ express: 'SERVER IS ACTIVE!' });
 });
 
+app.get('/thankyou', (req, res) => {
+  res.sendFile(path.join(__dirname, 'thanks.html'));
+});
+
 app.post('/api/add', (req, res) => {
-  console.log('attempting to create a new user....');
+  console.log('attempting to create a new user....'); 
 
   console.log(req.body.usrname);
   console.log(req.body.email);

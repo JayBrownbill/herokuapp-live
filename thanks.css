@@ -1,0 +1,24 @@
+/*** F O N T S  ***/
+@font-face {
+    font-family: 'kghappy';
+    src: local('KGHAPPY'), url(client/src/fonts/KGHAPPY.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'kg-solid';
+    src: local('KGHAPPYSolid'), url(client/src/fonts/KGHAPPYSolid.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'kg-solid';
+    src: url('client/src/fonts/KGHAPPYSolid.eot');
+    /* IE9 Compat Modes */
+    src: url('client/src/fonts/KGHAPPYSolid.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('client/src/fonts/KGHAPPYSolid.woff2') format('woff2'), /* Super Modern Browsers */
+    url('client/src/fonts/KGHAPPYSolid.woff') format('woff'), /* Pretty Modern Browsers */
+    url('client/src/fonts/KGHAPPYSolid.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('client/src/fonts/KGHAPPYSolid.svg') format('svg');
+    /* Legacy iOS */
+}
+
+h1{
+    font-family: 'kg-solid';
+}

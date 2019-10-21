@@ -5,6 +5,7 @@ import instagram from '../assets/IGcon.png';
 import facebook from '../assets/FBcon.png';
 import twitter from '../assets/TwitterCon.png';
 import CCLogo from '../assets/CCFooter.png';
+import cclogonew from '../assets/newcorner.png';
 
 import SocialIcon from '../components/SocialIcon';
 
@@ -40,7 +41,7 @@ export default class Footer extends React.Component {
                     <p className="hide-mob" id="regular"> An interactive web application by: </p>
 
                     <div id="CCLogo-foot">
-                        <img src={CCLogo} alt="Creators Corner Copyright" className="hide-mob" />
+                        <img src={cclogonew} alt="Creators Corner Copyright" className="hide-mob" />
                     </div>
                 </div>
             </div>
