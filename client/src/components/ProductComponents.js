@@ -12,9 +12,8 @@ export default class ProductComponents extends React.Component {
             <div id="product-Wrapper">
             <div id="productInfo">
               <h1 id = "productHead"> PRODUCT </h1>
-              <p id = "product-main-conent"> These are some of the products stolen from the voodoo realm. 
-              Captain strange has got his hands on the dreamers elixir. 
-              He will be making his way back to the realm to steal the other products for you! 
+              <p id = "product-main-conent"> Here are some of the products that Jerelle (Capt. Strange) found from the voodoo realm. 
+              He got his hands on the dreamers elixir (VODO Drink). He will continue to push the boundaries on the product experiences for us humans.
               Get his memo details.  </p>
 
             <h1 className="hide-mob"><span> Hover To Reveal Our Products </span></h1>

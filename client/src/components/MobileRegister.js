@@ -54,7 +54,7 @@ export default class MobileRegister extends React.Component {
             <div id="mobile-reg-form">
                 <form id="regform-mobile" onSubmit={this.sumbitHandler}>
                     <h1> Register </h1>
-                    <h4 id="reg-sub"> Sign up to get 30% off </h4>
+                    <h4 id="reg-sub"> GET 16% OF SOME VODO </h4>
                     <input name="usrname"
                         className="kickregister"
                         type="text"

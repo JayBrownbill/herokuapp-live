@@ -69,13 +69,13 @@ export default class Register extends React.Component {
                         <input type="text"
                             value={this.state.usrname}
                             name="usrname"
-                            placeholder=""
+                            placeholder="Full name here"
                             onChange={this.changeUsrHandler} />
 
                         <input type="text"
                             value={this.state.email}
                             name="email"
-                            placeholder=""
+                            placeholder="Email here"
                             onChange={this.changeEmailHandler} />
 
                         <input type="submit"
@@ -85,7 +85,7 @@ export default class Register extends React.Component {
                 </div>
 
                 <div className="hide-mob">
-                    <h1 id="pager"> <span> Sign up to get a message from Captain Stranges pager.</span> </h1>
+                    <h1 id="pager"> <span> Sign up to get 16% discount on some VODO </span> </h1>
                 </div>
 
             </div>

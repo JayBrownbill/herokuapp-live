@@ -188,7 +188,7 @@
     }
     .creamBase {
         background-color: #fff8eb;
-        height: 100%;
+        height: 130%;
         width: 100%;
     }
     #togglebtn {
@@ -312,12 +312,21 @@
         padding-right: 5em;
         padding-top: 5em;
         font-size: 0.90em;
+        text-align: center;
         /* z-index: 1; */
+    }
+
+    #why-choose{
+        font-size: 2.5em;
+        width: 100%;
+        text-align: center;
+        padding-top: 1em;
     }
     .toggleTxt {
         font-size: 0.57em;
         padding-top: 5em;
         padding-right: 5em;
+        text-align: center;
     }
     #lies-text-Wrapper {
         width: 50vw;
@@ -525,10 +534,18 @@
         /* ********SUBMIT BUTTON CSS ON HOVER AND ACTIVE NEEDS CHANGING *********/
     }
     #vodo-sec {
-        padding: 0em 1em 3em 4em;
+        /* padding: 0em 1em 3em 4em;
         width: 50vw;
         margin-top: -0.5em;
-        /* color: #694873; */
+        color: #694873; */
+        margin-left: 2em;
+        width: 50vw;
+        font-size: 0.95em;
+        color: #fff8eb;
+        background-color: #694873;
+        border-radius: 10px;
+        padding: 1em;
+        
     }
     #vodo-sec-title {
         padding-top: 1em;
@@ -737,7 +754,7 @@
     margin-top: 90em;
     position: absolute;
     background-color: rgba( 184, 140, 250, 0.5);
-    height: 7em;
+    height: 10em;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -779,9 +796,10 @@
 }
 
 #CCLogo-foot {
-    margin-left: -9em;
-    transform: scale(0.3);
-    margin-top: -5em;
+    margin-left: -17em;
+    transform: scale(0.2);
+    margin-top: -12em;
+    position: absolute;
 }
 
 #funds-height {

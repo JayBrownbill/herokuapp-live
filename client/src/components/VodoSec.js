@@ -21,6 +21,7 @@ export default class VodoSec extends React.Component {
         return (
             <div id = "vodoSecText">
 
+          <h1 id="why-choose">  WHY CHOOSE VODO?</h1>
 
             <div class="hide-mob" id="bottleUp">
             <ScrollAnimation delay={800} animateIn="flipInY" duration={1}>

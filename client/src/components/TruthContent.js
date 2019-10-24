@@ -74,10 +74,10 @@ export default class TruthContent extends React.Component {
                 </div>
 
                 <div className="toggleTxt">
-                    <p id="truth-text-Wrapper"> Captain Strange stole the formula from the VOODOO gods.
-                    They called the mixture the elixir for dreamers.
-                    Help them keep fighting to reach their dreams. He escaped with this
-                formula back to earth to share it with the world.</p>
+                    <p id="truth-text-Wrapper"> Capt. Strange stole the formula from the voodoo gods. 
+                    They called the mixture the elixir for dreamers. People drank the potion to help 
+                    them keep fighting to reach their dreams. Capt. Strange escaped the realm with the formula 
+                    and wants to share it with the world. </p>
                 </div>
             </div>
         )

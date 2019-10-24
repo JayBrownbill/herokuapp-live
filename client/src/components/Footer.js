@@ -4,8 +4,8 @@ import progbar from '../assets/progressRsz.png';
 import instagram from '../assets/IGcon.png';
 import facebook from '../assets/FBcon.png';
 import twitter from '../assets/TwitterCon.png';
-import CCLogo from '../assets/CCFooter.png';
-import cclogonew from '../assets/newcorner.png';
+
+import cclogonew from '../assets/cc-latest.png';
 
 import SocialIcon from '../components/SocialIcon';
 
@@ -31,7 +31,7 @@ export default class Footer extends React.Component {
                 </div>
 
                 <div className="hide-mob" id="funds-height">
-                    <h3 id="funds-title"> Only <b>£12,500</b> till the next launch </h3>
+                    <h3 id="funds-title"> Only <b>£20,000</b> till the next launch </h3>
                     <img src={progbar} alt="progress bar for kickstarter campaign" id="progbar" />
                 </div>
 
