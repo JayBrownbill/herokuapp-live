@@ -45,7 +45,7 @@ app.get('/thankyou', (req, res) => {
 });
 
 app.post('/api/add', (req, res) => {
-  console.log('attempting to create a new user....'); 
+  console.log('attempting to create a new user....');
 
   console.log(req.body.usrname);
   console.log(req.body.email);

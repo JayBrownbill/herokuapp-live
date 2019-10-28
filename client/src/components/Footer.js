@@ -20,9 +20,9 @@ export default class Footer extends React.Component {
             <div id="foot-wrapper">
                 <div id="footer-left-wrap">
                     <div id="socialicon-wrap">
-                        <SocialIcon ImgURL={facebook} />
-                        <SocialIcon ImgURL={instagram} />
-                        <SocialIcon ImgURL={twitter} />
+                        <a href="https://www.facebook.com/VODOdrinks/"> <SocialIcon ImgURL={facebook} /> </a>
+                        <a href="https://twitter.com/vodo_greentea"> <SocialIcon ImgURL={instagram} /> </a>
+                        <a href="https://twitter.com/vodo_greentea">  <SocialIcon ImgURL={twitter} /> </a>
                     </div>
 
                     <p id="footer-content-socials"> Follow our socials <br /> or email us at: shout@vodo.info  </p>

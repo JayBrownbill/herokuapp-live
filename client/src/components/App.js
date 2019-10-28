@@ -61,7 +61,7 @@ export default class App extends React.Component {
 
         <div id="footer">
         <div className="hide-desk" id="funds-bottle-mob">
-        <h3 id="funds-title-mob"> Only <b>£12,500</b> till the next launch </h3>
+        <h3 id="funds-title-mob"> Only <b>£20,000</b> till the next launch </h3>
         <img src={progbar} alt="progress bar for kickstarter campaign" id="progbar-mob" />
     </div>
         </div>
